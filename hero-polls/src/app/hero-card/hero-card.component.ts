@@ -4,7 +4,6 @@ import { Perso } from '../perso';
 @Component({
   selector: 'hp-hero-card',
   template: `
-   <mdb-card class="col-4">
   <!--Card image-->
   <mdb-card-img src="{{personnage.image}}" alt="Card image cap"></mdb-card-img>
 
@@ -19,7 +18,6 @@ import { Perso } from '../perso';
 
     <a href="#" mdbBtn color="primary" mdbWavesEffect>Details</a>
   </mdb-card-body>
-</mdb-card>
   `,
   styles: [
   ]

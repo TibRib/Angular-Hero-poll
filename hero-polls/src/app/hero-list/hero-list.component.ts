@@ -9,14 +9,20 @@ import { PersoService } from '../perso.service';
       hero-list works!
     </p>
     <div class="card-deck">
-      <hp-hero-card *ngFor="let i of heros"></hp-hero-card>
+      <hp-hero-card class="card mb-4" *ngFor="let hero of heros" [personnage]="hero"></hp-hero-card>
     </div>
   `,
-  styles: [
-  ]
+    styles: [
+      `
+      .card{
+        min-width: 200px;
+      }
+      
+      `
+    ]
 })
 export class HeroListComponent implements OnInit {
-  count : number = 20;
+  count : number = 8;
   heros : Array<Perso>
 
   constructor(private heroService: PersoService) { 
