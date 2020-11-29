@@ -9,8 +9,7 @@ import { Component } from '@angular/core';
         Welcome to {{title}}!
       </h1>
     </div>
-    <hp-hero-list></hp-hero-list>
-    <router-outlet></router-outlet>
+    <hp-all-heroes-page></hp-all-heroes-page>
   `,
   styles: []
 })
