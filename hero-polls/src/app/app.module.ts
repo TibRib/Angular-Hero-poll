@@ -7,6 +7,7 @@ import { HeroCardComponent } from './hero-card/hero-card.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { VersusPageComponent } from './versus-page/versus-page.component';
 import { AllHeroesPageComponent } from './all-heroes-page/all-heroes-page.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AllHeroesPageComponent } from './all-heroes-page/all-heroes-page.compon
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
