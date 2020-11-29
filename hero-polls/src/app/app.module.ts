@@ -10,6 +10,8 @@ import { HeroListComponent } from './hero-list/hero-list.component';
 import { VersusPageComponent } from './versus-page/versus-page.component';
 import { AllHeroesPageComponent } from './all-heroes-page/all-heroes-page.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +23,7 @@ import { AllHeroesPageComponent } from './all-heroes-page/all-heroes-page.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [],

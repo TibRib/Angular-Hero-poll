@@ -22,7 +22,7 @@ import { PersoService } from '../perso.service';
     ]
 })
 export class HeroListComponent implements OnInit {
-  count : number = 8;
+  count : number = 32;
   heros : Array<Perso>
 
   constructor(private heroService: PersoService) { 
