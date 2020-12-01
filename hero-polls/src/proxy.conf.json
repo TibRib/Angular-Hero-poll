@@ -1,8 +1,10 @@
 {
-  "/api/*": {
-      "target": "http://localhost:3000",
-      "secure": false,
-      "logLevel": "debug",
-      "changeOrigin": true
+  "/marvel": {
+    "target": "http://gateway.marvel.com:80",
+    "secure": false,
+    "pathRewrite": {
+      "^/marvel": ""
+    },
+    "changeOrigin": true
   }
 }
