@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
+import {Md5} from 'ts-md5/dist/md5';
 
 /* MARVEL API 
   CALLS PER DAY : 3000
@@ -11,7 +12,6 @@ const MARVEL_URL = "http://gateway.marvel.com";
 const MARVEL_PUB_KEY= "d6e02dd7c891815142fcac32c5c10859";
 const MARVEL_PRIV_KEY = "7124daa3a6fc215551ec2e84c5127989333906ef";
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -22,12 +22,12 @@ export class PersoService {
 
   private marvelHeaders() : any
   {
-    var md5 = require('md5');
+    
     var ts = String(Date.now());
     const headers = { 
       apikey: MARVEL_PUB_KEY,
       ts: ts,
-      hash: String(md5(ts+MARVEL_PRIV_KEY+MARVEL_PUB_KEY)), //Hash = md5 ( ts+privateKey+publicKey )
+      hash: String(  Md5.hashStr(ts+MARVEL_PRIV_KEY+MARVEL_PUB_KEY) ), //Hash = md5 ( ts+privateKey+publicKey )
       limit : String(24),
       offset : String(this.marvel_page*24),
     };
@@ -37,11 +37,14 @@ export class PersoService {
   
   getPersosMARVEL(): void{
     const headers=  this.marvelHeaders()
+    console.log(headers);
+    
     this.http.get(MARVEL_URL+"/v1/public/characters", { headers })
       .subscribe(response => { 
         //this.myData = response; 
         console.log(response);
       });
+      
   }
 
   getPersoMARVEL(id : number){

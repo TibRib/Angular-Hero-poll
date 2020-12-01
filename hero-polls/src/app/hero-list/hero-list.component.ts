@@ -32,6 +32,8 @@ export class HeroListComponent implements OnInit {
         {  id : i, name: "Name", description: "description", backstory: "backstory", connections: [], abilities : [], origin : "DC", image : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" }
       );
     }
+    
+    heroService.getPersosMARVEL();
   }
   
   ngOnInit(): void {
