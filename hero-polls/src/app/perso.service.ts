@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import {Md5} from 'ts-md5/dist/md5';
+import { Perso } from './perso';
 
 /* MARVEL API 
   CALLS PER DAY : 3000
@@ -35,22 +36,43 @@ export class PersoService {
     return headers;
   }
   
-  getPersosMARVEL(): void{
+  getPersosMARVEL(): Array<Perso>{
+    
     const headers=  this.marvelHeaders()
     console.log(headers);
-
-    this.http.get("/marvel/v1/public/characters?apikey=d6e02dd7c891815142fcac32c5c10859&ts=1606846806128&hash=e7c9553d739815193473c401c344c9f6&limit=24&offset=0")
-      .subscribe(response => { 
-        //this.myData = response; 
-        console.log(response);
-      });
     /*
+
     this.http.get("/marvel/v1/public/characters", { headers })
       .subscribe(response => { 
         //this.myData = response; 
         console.log(response);
       });
       */
+     let persos : Array<Perso> = [];
+     
+     this.http.get("./assets/json_templates/characters.json").subscribe(response =>{
+       let data = response["data"];
+       let results = data["results"];
+       console.log(results);
+
+       results.forEach(hero => {
+
+        if(hero["description"] || hero["thumbnail"]){
+         persos.push({
+            id : hero["id"],
+            name: hero["name"],
+            description: hero["description"],
+            connections: [],
+            abilities : [],
+            origin : "Marvel",
+            image : hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],
+            URI : hero["resourceURI"]
+          });
+        }
+       });
+    })
+
+     return persos;
   }
 
   getPersoMARVEL(id : number){

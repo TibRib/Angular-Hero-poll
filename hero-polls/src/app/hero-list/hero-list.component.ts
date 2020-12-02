@@ -26,14 +26,7 @@ export class HeroListComponent implements OnInit {
   heros : Array<Perso>
 
   constructor(private heroService: PersoService) { 
-    this.heros = [];
-    for(let i =0; i<this.count; i++){
-      this.heros.push(
-        {  id : i, name: "Name", description: "description", backstory: "backstory", connections: [], abilities : [], origin : "DC", image : "https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(97).jpg" }
-      );
-    }
-    
-    heroService.getPersosMARVEL();
+    this.heros = heroService.getPersosMARVEL();
   }
   
   ngOnInit(): void {
