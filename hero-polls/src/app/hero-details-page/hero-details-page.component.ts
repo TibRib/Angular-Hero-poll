@@ -19,15 +19,38 @@ export class HeroDetailsPageComponent implements OnInit {
     private route: ActivatedRoute,
     private location: Location,
     private persoService: PersoService
-  ) { }
+  ) {
+    this.personnage =  {
+      id : 0,
+      name: "Unknown hero",
+      description: "Empty description",
+      connections: [],
+      abilities : [],
+      origin : this.route.snapshot.paramMap.get('origin')+" - "+this.route.snapshot.paramMap.get('id'),
+      image : "",
+      URI : ""
+    };
+  }
 
   ngOnInit(): void {
-    this.getHero();
+    //TODO : Async support
+    //this.getHero();
   }
   
   getHero(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.personnage = this.persoService.getPersoMARVEL(id);
+    const id : number = +this.route.snapshot.paramMap.get('id');
+    const origin : string = this.route.snapshot.paramMap.get('origin');
+    switch(origin){
+      case 'Marvel':
+      case 'marvel':
+        this.personnage = this.persoService.getPersoMARVEL(id);
+        break;
+      
+      default:
+        console.log("Error :: No origin specified !")
+    }
+    
+    
   }
 
 }

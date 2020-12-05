@@ -22,7 +22,7 @@
         </section>
 
         <!-- Connections : list of other heroes -->
-        <section class="row p-3">
+        <section class="row p-3" *ngIf="personnage.connections.length > 0">
             <div class="col-2 p-0 mr-3">
                 <hr>
                 <h4><b>Connections</b></h4>
