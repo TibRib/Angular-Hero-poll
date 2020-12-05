@@ -16,7 +16,7 @@ import { Perso } from '../perso';
       {{personnage.description}}
     </mdb-card-text>
 
-    <a href="#" mdbBtn color="primary" mdbWavesEffect>Details</a>
+    <a routerLink="/details" mdbBtn color="primary" mdbWavesEffect>Details</a>
   </mdb-card-body>
   `,
   styles: [

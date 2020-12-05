@@ -9,7 +9,8 @@ import { HeroCardComponent } from './hero-card/hero-card.component';
 import { HeroListComponent } from './hero-list/hero-list.component';
 import { VersusPageComponent } from './versus-page';
 import { AllHeroesPageComponent } from './all-heroes-page';
-import { HomeComponent } from './home';
+import { HomeComponent } from './home-page';
+import { HeroDetailsPageComponent } from './hero-details-page';
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -21,7 +22,8 @@ import { HttpClientModule } from '@angular/common/http';
     HeroListComponent,
     VersusPageComponent,
     AllHeroesPageComponent,
-    HomeComponent
+    HomeComponent,
+    HeroDetailsPageComponent
   ],
   imports: [
     BrowserModule,
