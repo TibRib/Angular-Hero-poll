@@ -12,8 +12,8 @@ import { Component, OnInit } from '@angular/core';
         <h1 id="title_main">Hero polls</h1>
 
         <div class="col-9 mx-auto">
-          <a routerLink="/versus" class="btn btn-block btn-lg btn-primary rounded-pill mb-3">Versus</a>
-          <a routerLink="/heroes" class="btn btn-block btn-danger rounded-pill">All Heroes</a>
+          <a routerLink="/versus" class="ml-2 btn btn-block btn-lg btn-primary rounded-pill mb-3">Versus</a>
+          <a routerLink="/heroes" class="ml-5 btn btn-block btn-danger rounded-pill">All Heroes</a>
         </div>
       </div>
     </div>
@@ -23,7 +23,7 @@ import { Component, OnInit } from '@angular/core';
     
     @font-face {
       font-family: "Kestrel";
-      src: url("assets/kestrel.otf") format("opentype"),
+      src: url("./assets/kestrel.otf")
       }
 
     #myVideo {
@@ -38,8 +38,9 @@ import { Component, OnInit } from '@angular/core';
     }
 
     #title_main{
-      font-size : 8em;
-      font-family: "Helvetica"
+      font-size : 7em;
+      font-family: "Kestrel";
+      text-shadow: -7px 5px 2px blue;
     }
 
     /* Add some content at the bottom of the video/page */
@@ -61,6 +62,10 @@ import { Component, OnInit } from '@angular/core';
       height : 50%;
       color : white;
     }
+
+    .btn:hover{
+      transform: translate(50px, 0px)
+    } 
     
     `
   ]
