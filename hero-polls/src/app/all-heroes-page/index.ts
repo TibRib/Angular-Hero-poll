@@ -1,0 +1,1 @@
+export * from './all-heroes-page.component';

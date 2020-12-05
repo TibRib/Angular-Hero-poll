@@ -75,7 +75,8 @@ export class PersoService {
      return persos;
   }
 
-  getPersoMARVEL(id : number){
+  getPersoMARVEL(url : string) : Perso{
+    /*
     const headers=  this.marvelHeaders()
     this.http.get(MARVEL_URL+"/v1/public/characters/"+id, { headers })
       .subscribe(response => { 
@@ -83,6 +84,27 @@ export class PersoService {
         console.log(response);
       });
   }
+  */
+    let perso : Perso;
+    this.http.get("./assets/json_templates/characters.json").subscribe(response =>{
+      let data = response["data"];
+      let results = data["results"];
+      let hero = results[0];
 
+      perso =  {
+        id : hero["id"],
+        name: hero["name"],
+        description: hero["description"],
+        connections: [],
+        abilities : [],
+        origin : "Marvel",
+        image : hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],
+        URI : hero["resourceURI"]
+      };
+      
+    });
+    return perso;
+  }
 
+  
 }
