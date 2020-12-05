@@ -1,13 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Perso } from '../perso';
 import { PersoService } from '../perso.service';
 
 @Component({
   selector: 'hp-hero-list',
   template: `
-    <p>
-      hero-list works!
-    </p>
     <div class="card-deck">
       <hp-hero-card class="card mb-4" *ngFor="let hero of heros" [personnage]="hero"></hp-hero-card>
     </div>
@@ -22,11 +19,9 @@ import { PersoService } from '../perso.service';
     ]
 })
 export class HeroListComponent implements OnInit {
-  count : number = 32;
-  heros : Array<Perso>
+  @Input() heros: Array<Perso>
 
-  constructor(private heroService: PersoService) { 
-    this.heros = heroService.getPersosMARVEL();
+  constructor() { 
   }
   
   ngOnInit(): void {
