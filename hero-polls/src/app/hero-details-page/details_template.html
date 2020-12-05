@@ -3,12 +3,13 @@
 <section class="row px-3">
     <main class="col mx-4" id="hero_description">
         <!-- Hero name -->
-        <section class="mb-3 p-0">
-            <h1 style="font-size: 5em; font-weight: bold">Hero Name</h1>
-            <p class=" align-bottom">DC Comics</p>
-        </section>
+        <header class="mb-3 p-0">
+            <h1 class="p-0" style="font-size: 5em; font-weight: bold">Hero name</h1>
+            <p class="pl-1 align-bottom">Hero origin</p>
+        </header>
 
-        <div class="row p-3">
+        <!-- Biography section -->
+        <section class="row p-3">
             <div class="col-2 p-0 mr-3">
                 <hr>
                 <h4><b>Biography</b></h4>
@@ -41,29 +42,37 @@
                 Nam lobortis metus justo, vel placerat ligula ornare quis.
                 Nunc sem odio, consequat ac neque quis, pulvinar sodales quam.
             </article>
-        </div>
+        </section>
+
+        <!-- Connections : list of other heroes -->
+        <section class="row p-3">
+            <div class="col-2 p-0 mr-3">
+                <hr>
+                <h4><b>Connections</b></h4>
+            </div>
+            <div class="col">
+                <hp-hero-list [heros]="">
+                </hp-hero-list>
+            </div>
+        </section>
 
         
     </main>
 
     <aside class="col-12 col-md-2 p-0">
-        <img class="mb-3" style="border-radius: 25px; box-shadow : 0 0 6px blue; width:100%; height: auto;" src="https://static.wikia.nocookie.net/marvel_dc/images/a/a6/Batman_Vol_2_2_Variant_Textless.jpg/revision/latest/scale-to-width-down/328?cb=20120228075313" alt="hero picture">
+        <img class="rounded mb-3 img-fluid" style="height: 275px; object-fit: cover; box-shadow:  0 0 blue 10px;" 
+            src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3-xY2vrRJIM%2Fmaxresdefault.jpg&sp=1607184457Tb5aec010e581bf11600fcb27f9e51a97fa0f3fe5d476dbeac30b0ded041eb94b"
+            alt="hero picture">
         <br>
         <h3>Abilities</h3>
         <hr>
-        <table class="table table-bordered">
-            <tbody>
-              <tr>
-                <td>Strength</td>
-              </tr>
-              <tr>
-                <td>Strength</td>
-              </tr>
-              <tr>
-                <td>Strength</td>
-              </tr>
-            </tbody>
-          </table>
+        <ul class="rounded list-group list-group-flush">
+            <li class="list-group-item">Strength</li>
+            <li class="list-group-item">Strength</li>
+            <li class="list-group-item">Strength</li>
+            <li class="list-group-item">Strength</li>
+            <li class="list-group-item">Strength</li>
+          </ul>
       </aside>
 
       
