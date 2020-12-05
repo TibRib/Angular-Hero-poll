@@ -4,8 +4,8 @@
     <main class="col mx-4" id="hero_description">
         <!-- Hero name -->
         <header class="mb-3 p-0">
-            <h1 class="p-0" style="font-size: 5em; font-weight: bold">Hero name</h1>
-            <p class="pl-1 align-bottom">Hero origin</p>
+            <h1 class="p-0" style="font-size: 5em; font-weight: bold">{{personnage.name}}</h1>
+            <p class="pl-1 align-bottom">{{personnage.origin}}</p>
         </header>
 
         <!-- Biography section -->
@@ -17,30 +17,7 @@
 
              <!-- Hero description -->
             <article class="col mt-2 mx-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Sed lobortis, orci eu mattis facilisis, leo sem blandit risus, 
-                at vehicula nulla leo vitae ante.
-                Praesent id diam elementum, finibus diam et, tempor neque.
-                Proin mollis nulla sit amet elit tristique placerat.
-                Maecenas at risus felis.
-                Curabitur accumsan purus eget est semper, ut cursus libero fermentum.
-                In diam elit, luctus et massa eu, posuere sollicitudin neque.
-                Pellentesque dapibus feugiat ante ut blandit.
-                Suspendisse luctus ornare neque, vitae pulvinar nibh hendrerit in.
-                Praesent molestie fringilla nisi, sed fermentum mauris malesuada quis.
-                Pellentesque tincidunt dapibus justo vel iaculis.
-                Duis turpis ipsum, imperdiet ac congue sit amet, scelerisque quis lectus.
-                Donec porta lectus at mi viverra congue.
-
-                Ut fermentum dui porta nulla vehicula interdum et a metus.
-                Cras scelerisque feugiat arcu eu venenatis. Proin et ipsum vulputate,
-                efficitur lorem vitae, aliquet nulla. Nunc sed elementum lacus.
-                Morbi nec ipsum nec nunc fermentum scelerisque at nec urna.
-                Proin fermentum magna non augue aliquet, pharetra pretium ligula porta.
-                Vestibulum feugiat sodales ligula non ullamcorper. Maecenas eu pulvinar enim.
-                Praesent dapibus est sapien, eu sodales enim scelerisque sit amet.
-                Nam lobortis metus justo, vel placerat ligula ornare quis.
-                Nunc sem odio, consequat ac neque quis, pulvinar sodales quam.
+                {{personnage.description}}
             </article>
         </section>
 
@@ -51,7 +28,7 @@
                 <h4><b>Connections</b></h4>
             </div>
             <div class="col">
-                <hp-hero-list [heros]="">
+                <hp-hero-list [heros]="personnage.connections">
                 </hp-hero-list>
             </div>
         </section>
@@ -61,17 +38,13 @@
 
     <aside class="col-12 col-md-2 p-0">
         <img class="rounded mb-3 img-fluid" style="height: 275px; object-fit: cover; box-shadow:  0 0 blue 10px;" 
-            src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fi.ytimg.com%2Fvi%2F3-xY2vrRJIM%2Fmaxresdefault.jpg&sp=1607184457Tb5aec010e581bf11600fcb27f9e51a97fa0f3fe5d476dbeac30b0ded041eb94b"
-            alt="hero picture">
+            src="{{personnage.image}}"
+            alt="{{personnage.name}}'s picture">
         <br>
         <h3>Abilities</h3>
         <hr>
         <ul class="rounded list-group list-group-flush">
-            <li class="list-group-item">Strength</li>
-            <li class="list-group-item">Strength</li>
-            <li class="list-group-item">Strength</li>
-            <li class="list-group-item">Strength</li>
-            <li class="list-group-item">Strength</li>
+            <li class="list-group-item" *ngFor="let ability of personnage.abilities" >{{ability}}</li>
           </ul>
       </aside>
 
