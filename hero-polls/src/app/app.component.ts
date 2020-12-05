@@ -14,13 +14,20 @@ import { Component } from '@angular/core';
     </nav>
 
     <!-- contenu -->
-    <div class="jumbotron">
+    <div class="jumbotron min-vh-100">
         <div class="container">
             <router-outlet></router-outlet>
         </div>
     </div>
+
   `,
-  styles: []
+  styles: [
+    `
+    .navbar{
+      z-index: 99 !important;
+    }
+    `
+  ]
 })
 export class AppComponent {
   title = 'hero-polls';
