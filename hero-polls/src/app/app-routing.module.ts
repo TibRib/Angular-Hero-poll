@@ -10,7 +10,7 @@ const routes: Routes = [
   { path : '', component: HomeComponent },
   { path : 'versus', component: VersusPageComponent },
   { path : 'heroes', component: AllHeroesPageComponent },
-  { path : 'details', component: HeroDetailsPageComponent },
+  { path : 'details/:id', component: HeroDetailsPageComponent },
 
   //Redirection home si non trouvé
   { path : '**', redirectTo: '' }
