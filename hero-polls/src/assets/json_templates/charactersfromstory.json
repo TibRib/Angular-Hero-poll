@@ -1,0 +1,2675 @@
+{
+   "code":200,
+   "status":"Ok",
+   "copyright":"© 2020 MARVEL",
+   "attributionText":"Data provided by Marvel. © 2020 MARVEL",
+   "attributionHTML":"<a href=\"http://marvel.com\">Data provided by Marvel. © 2020 MARVEL</a>",
+   "etag":"a1d78326912b822424f150a1e787c55a9f7ba856",
+   "data":{
+      "offset":0,
+      "limit":20,
+      "total":9,
+      "count":9,
+      "results":[
+         {
+            "id":1017100,
+            "name":"A-Bomb (HAS)",
+            "description":"Rick Jones has been Hulk's best bud since day one, but now he's more than a friend...he's a teammate! Transformed by a Gamma energy explosion, A-Bomb's thick, armored skin is just as strong and powerful as it is blue. And when he curls into action, he uses it like a giant bowling ball of destruction! ",
+            "modified":"2013-09-18T15:54:04-0400",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1017100",
+            "comics":{
+               "available":3,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1017100/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40632",
+                     "name":"Hulk (2008) #53"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40630",
+                     "name":"Hulk (2008) #54"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40628",
+                     "name":"Hulk (2008) #55"
+                  }
+               ],
+               "returned":3
+            },
+            "series":{
+               "available":2,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1017100/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/17765",
+                     "name":"FREE COMIC BOOK DAY 2013 1 (2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3374",
+                     "name":"Hulk (2008 - 2012)"
+                  }
+               ],
+               "returned":2
+            },
+            "stories":{
+               "available":7,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1017100/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92078",
+                     "name":"Hulk (2008) #55",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92079",
+                     "name":"Interior #92079",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92082",
+                     "name":"Hulk (2008) #54",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92083",
+                     "name":"Interior #92083",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92086",
+                     "name":"Hulk (2008) #53",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92087",
+                     "name":"Interior #92087",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/105929",
+                     "name":"cover from Free Comic Book Day 2013 (Avengers/Hulk) (2013) #1",
+                     "type":"cover"
+                  }
+               ],
+               "returned":7
+            },
+            "events":{
+               "available":0,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1017100/events",
+               "items":[
+                  
+               ],
+               "returned":0
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/characters/76/a-bomb?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1017100/a-bomb_has?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1010370,
+            "name":"Alpha Flight",
+            "description":"",
+            "modified":"2013-10-24T13:09:22-0400",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/1/60/52695277ee088",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1010370",
+            "comics":{
+               "available":207,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010370/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/39654",
+                     "name":"Alpha Flight (2011) #0.1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12637",
+                     "name":"Alpha Flight (1983) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/393",
+                     "name":"Alpha Flight (2004) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/39819",
+                     "name":"Alpha Flight (2011) #1 (Eaglesham Variant)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38569",
+                     "name":"Alpha Flight (2011) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12679",
+                     "name":"Alpha Flight (1983) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/456",
+                     "name":"Alpha Flight (2004) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/39818",
+                     "name":"Alpha Flight (2011) #2 (Eaglesham Variant)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12690",
+                     "name":"Alpha Flight (1983) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/616",
+                     "name":"Alpha Flight (2004) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/39820",
+                     "name":"Alpha Flight (2011) #3 (Eaglesham Variant)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12701",
+                     "name":"Alpha Flight (1983) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38567",
+                     "name":"Alpha Flight (2011) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/677",
+                     "name":"Alpha Flight (2004) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12712",
+                     "name":"Alpha Flight (1983) #5"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38568",
+                     "name":"Alpha Flight (2011) #5"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/613",
+                     "name":"Alpha Flight (2004) #5"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/572",
+                     "name":"Alpha Flight (2004) #6"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12723",
+                     "name":"Alpha Flight (1983) #6"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38566",
+                     "name":"Alpha Flight (2011) #6"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":39,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010370/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/719",
+                     "name":"Alpha Flight (2004 - 2005)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/13907",
+                     "name":"Alpha Flight (2011 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2116",
+                     "name":"Alpha Flight (1983 - 1994)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/27041",
+                     "name":"Alpha Flight Facsimile Edition (2019)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/27625",
+                     "name":"Alpha Flight: True North (2019)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/28069",
+                     "name":"Annihilation: Scourge (2020)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/744",
+                     "name":"Astonishing X-Men (2004 - 2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1991",
+                     "name":"Avengers (1963 - 1996)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1995",
+                     "name":"Cable (1993 - 2002)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/20718",
+                     "name":"Captain Marvel (2016 - 2017)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/22552",
+                     "name":"Champions (2016 - 2019)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/11854",
+                     "name":"Chaos War (2010 - 2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/13468",
+                     "name":"Chaos War One-Shots (2010)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/13260",
+                     "name":"Chaos War: Alpha Flight (2010)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/21692",
+                     "name":"Civil War II: Choosing Sides (2016)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/14399",
+                     "name":"Essential X-Men Vol. 2 (All-New Edition) (2011 - Present)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2123",
+                     "name":"Fantastic Four (1996 - 1997)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2121",
+                     "name":"Fantastic Four (1961 - 1998)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/20465",
+                     "name":"Guardians of the Galaxy (2015 - 2017)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1812",
+                     "name":"Heroes Reborn: Fantastic Four (2006)"
+                  }
+               ],
+               "returned":20
+            },
+            "stories":{
+               "available":377,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010370/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2921",
+                     "name":"Alpha Flight (2004) #9",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2922",
+                     "name":"1 of 4 - Days of Future Present Past Participle",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2923",
+                     "name":"Alpha Flight (2004) #1",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2924",
+                     "name":"Interior #2924",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2925",
+                     "name":"Alpha Flight (2004) #2",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2926",
+                     "name":"Interior #2926",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2927",
+                     "name":"Alpha Flight (2004) #6",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2928",
+                     "name":"Interior #2928",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2929",
+                     "name":"Alpha Flight (2004) #5",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2930",
+                     "name":"Interior #2930",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2931",
+                     "name":"Alpha Flight (2004) #3",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2932",
+                     "name":"Interior #2932",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2933",
+                     "name":"Alpha Flight (2004) #4",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2934",
+                     "name":"Interior #2934",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2935",
+                     "name":"Alpha Flight (2004) #7",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2936",
+                     "name":"\"WAXING POETIC\" PART 1 (OF 2) Is the All-New, All-Different Alpha Flight really disbanding after only seven issues? Not if the r",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2937",
+                     "name":"Alpha Flight (2004) #8",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2938",
+                     "name":"\"WAXING POETIC\" PART 2 (OF 2) Montreal faces its gravest hour as it falls under attack by…wax statues of the entire Marvel Unive",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2939",
+                     "name":"Alpha Flight (2004) #10",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2940",
+                     "name":"2 of 4 - Days of Future Present Past Participle",
+                     "type":"interiorStory"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":7,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010370/events",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/116",
+                     "name":"Acts of Vengeance!"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/296",
+                     "name":"Chaos War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/302",
+                     "name":"Fear Itself"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/29",
+                     "name":"Infinity War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/337",
+                     "name":"Monsters Unleashed"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/333",
+                     "name":"Monsters Unleashed"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/271",
+                     "name":"Secret Wars II"
+                  }
+               ],
+               "returned":7
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/comics/characters/1010370/alpha_flight?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/Alpha_Flight?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1010370/alpha_flight?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1009220,
+            "name":"Captain America",
+            "description":"Vowing to serve his country any way he could, young Steve Rogers took the super soldier serum to become America's one-man army. Fighting for the red, white and blue for over 60 years, Captain America is the living, breathing symbol of freedom and liberty.",
+            "modified":"2020-04-04T19:01:59-0400",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1009220",
+            "comics":{
+               "available":2357,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009220/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/43488",
+                     "name":"A+X (2012) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/43501",
+                     "name":"A+X (2012) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/43508",
+                     "name":"A+X (2012) #9"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17743",
+                     "name":"A-Next (1998) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17744",
+                     "name":"A-Next (1998) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17745",
+                     "name":"A-Next (1998) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17746",
+                     "name":"A-Next (1998) #5"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17747",
+                     "name":"A-Next (1998) #6"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17748",
+                     "name":"A-Next (1998) #7"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17749",
+                     "name":"A-Next (1998) #8"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17750",
+                     "name":"A-Next (1998) #9"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17740",
+                     "name":"A-Next (1998) #10"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17741",
+                     "name":"A-Next (1998) #11"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17742",
+                     "name":"A-Next (1998) #12"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/66978",
+                     "name":"Adventures of Captain America (1991) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/66979",
+                     "name":"Adventures of Captain America (1991) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/66980",
+                     "name":"Adventures of Captain America (1991) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/66981",
+                     "name":"Adventures of Captain America (1991) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/42539",
+                     "name":"Age of Apocalypse (2011) #2 (Avengers Art Appreciation Variant)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/30090",
+                     "name":"Age of Heroes (2010) #1"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":655,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009220/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/16450",
+                     "name":"A+X (2012 - 2014)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3620",
+                     "name":"A-Next (1998 - 1999)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/24227",
+                     "name":"Adventures of Captain America (1991 - 1992)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/15331",
+                     "name":"Age of Apocalypse (2011 - 2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9790",
+                     "name":"Age of Heroes (2010)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/10235",
+                     "name":"AGE OF HEROES TPB (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/13896",
+                     "name":"Age of X: Universe (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/7534",
+                     "name":"All Winners Comics 70th Anniversary Special (2009)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/20682",
+                     "name":"All-New Wolverine (2015 - 2018)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2114",
+                     "name":"All-Winners Comics (1941 - 1947)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9865",
+                     "name":"All-Winners Squad: Band of Heroes (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2116",
+                     "name":"Alpha Flight (1983 - 1994)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/454",
+                     "name":"Amazing Spider-Man (1999 - 2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/15540",
+                     "name":"Amazing Spider-Man Annual (2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9802",
+                     "name":"Amazing Spider-Man Annual (2010)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2984",
+                     "name":"Amazing Spider-Man Annual (1964 - 2018)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1489",
+                     "name":"AMAZING SPIDER-MAN VOL. 10: NEW AVENGERS TPB (2005)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/14818",
+                     "name":"Annihilators: Earthfall (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/24323",
+                     "name":"Ant-Man and the Wasp Adventures (2018)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/14696",
+                     "name":"Art of Marvel Movies: The Art of Captain America - The First Avenger (2011 - Present)"
+                  }
+               ],
+               "returned":20
+            },
+            "stories":{
+               "available":3518,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009220/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/670",
+                     "name":"X-MEN (2004) #186",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/892",
+                     "name":"THOR (1998) #81",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/960",
+                     "name":"3 of ?",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1026",
+                     "name":"Avengers (1998) #81",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1041",
+                     "name":"Avengers (1998) #502",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1042",
+                     "name":"Avengers (1998) #503",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1054",
+                     "name":"Avengers (1998) #72",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1163",
+                     "name":"Amazing Spider-Man (1999) #519",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1165",
+                     "name":"Amazing Spider-Man (1999) #520",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1167",
+                     "name":"Amazing Spider-Man (1999) #521",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1175",
+                     "name":"Amazing Spider-Man (1999) #523",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1193",
+                     "name":"Amazing Spider-Man (1999) #534",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1199",
+                     "name":"Amazing Spider-Man (1999) #537",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1203",
+                     "name":"Amazing Spider-Man (1999) #538",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1414",
+                     "name":"Cover #1414",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1500",
+                     "name":"Interior #1500",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1501",
+                     "name":"CAPTAIN AMERICA (2002) #21",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1503",
+                     "name":"CAPTAIN AMERICA (2002) #22",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1505",
+                     "name":"CAPTAIN AMERICA (2002) #23",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1606",
+                     "name":"WEAPON X (2002) #14",
+                     "type":"cover"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":31,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009220/events",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/116",
+                     "name":"Acts of Vengeance!"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/314",
+                     "name":"Age of Ultron"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/303",
+                     "name":"Age of X"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/231",
+                     "name":"Armor Wars"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/234",
+                     "name":"Avengers Disassembled"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/310",
+                     "name":"Avengers VS X-Men"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/320",
+                     "name":"Axis"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/296",
+                     "name":"Chaos War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/238",
+                     "name":"Civil War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/248",
+                     "name":"Fall of the Mutants"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/302",
+                     "name":"Fear Itself"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/251",
+                     "name":"House of M"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/252",
+                     "name":"Inferno"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/315",
+                     "name":"Infinity"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/29",
+                     "name":"Infinity War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/317",
+                     "name":"Inhumanity"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/151",
+                     "name":"Maximum Carnage"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/37",
+                     "name":"Maximum Security"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/337",
+                     "name":"Monsters Unleashed"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/333",
+                     "name":"Monsters Unleashed"
+                  }
+               ],
+               "returned":20
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/comics/characters/1009220/captain_america?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/Captain_America_(Steve_Rogers)?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1009220/captain_america?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1010854,
+            "name":"Living Lightning",
+            "description":"",
+            "modified":"1969-12-31T19:00:00-0500",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/5/a0/4c0035c72cc26",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1010854",
+            "comics":{
+               "available":21,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010854/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17490",
+                     "name":"Avengers (1998) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17501",
+                     "name":"Avengers (1998) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17512",
+                     "name":"Avengers (1998) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17523",
+                     "name":"Avengers (1998) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17509",
+                     "name":"Avengers (1998) #27"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17521",
+                     "name":"Avengers (1998) #38"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17531",
+                     "name":"Avengers (1998) #47"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17532",
+                     "name":"Avengers (1998) #48"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17535",
+                     "name":"Avengers (1998) #50"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17537",
+                     "name":"Avengers (1998) #52"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17538",
+                     "name":"Avengers (1998) #53"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17540",
+                     "name":"Avengers (1998) #55"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/1311",
+                     "name":"Avengers Assemble (Hardcover)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/4461",
+                     "name":"Avengers Assemble Vol. 3 (Hardcover)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/5844",
+                     "name":"Avengers Assemble Vol. 4 (Hardcover)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17844",
+                     "name":"West Coast Avengers Annual (1986) #6"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17845",
+                     "name":"West Coast Avengers Annual (1986) #7"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/5368",
+                     "name":"Avengers: Galactic Storm Vol. 2 (Trade Paperback)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/1038",
+                     "name":"Avengers: The Kang Dynasty (Trade Paperback)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40628",
+                     "name":"Hulk (2008) #55"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":9,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010854/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/354",
+                     "name":"Avengers (1998 - 2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1340",
+                     "name":"Avengers Assemble (2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1737",
+                     "name":"Avengers Assemble Vol. 3 (2006)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1816",
+                     "name":"Avengers Assemble Vol. 4 (2007)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1679",
+                     "name":"Avengers: Galactic Storm Vol. 2 (2006)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/98",
+                     "name":"Avengers: The Kang Dynasty (2002)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3374",
+                     "name":"Hulk (2008 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2083",
+                     "name":"Thor (1966 - 1996)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3632",
+                     "name":"West Coast Avengers Annual (1986 - 1988)"
+                  }
+               ],
+               "returned":9
+            },
+            "stories":{
+               "available":21,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010854/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/17229",
+                     "name":"Now Strikes the Starforce",
+                     "type":""
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37337",
+                     "name":"Cover #37337",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37338",
+                     "name":"Once an Avenger...",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37359",
+                     "name":"Avengers (1998) #2",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37360",
+                     "name":"The Call",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37376",
+                     "name":"New Order",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37386",
+                     "name":"Fata Morgana",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37405",
+                     "name":"Above and Beyond",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37408",
+                     "name":"Avengers (1998) #4",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37409",
+                     "name":"Too Many Avengers!",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37426",
+                     "name":"In the Heart of Battle",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37428",
+                     "name":"War Plan \"A\"",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37438",
+                     "name":"Book of Revelations",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37442",
+                     "name":"Counter Attack",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37444",
+                     "name":"The Last Castle",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37449",
+                     "name":"The Last Farewell",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37920",
+                     "name":"Justice, Like Lightning",
+                     "type":""
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37926",
+                     "name":"My Name Is Legion",
+                     "type":""
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/67077",
+                     "name":"Thor (1966) #446",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92078",
+                     "name":"Hulk (2008) #55",
+                     "type":"cover"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":0,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010854/events",
+               "items":[
+                  
+               ],
+               "returned":0
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/characters/2841/living_lightning?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/Living%20Lightning?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1010854/living_lightning?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1010805,
+            "name":"Machine Man",
+            "description":"",
+            "modified":"2012-01-18T12:42:25-0500",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/f/d0/4c003727804b4",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1010805",
+            "comics":{
+               "available":94,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010805/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/84341",
+                     "name":"2020 Iron Age (2020) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/84349",
+                     "name":"2020 Machine Man (2020) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17490",
+                     "name":"Avengers (1998) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17501",
+                     "name":"Avengers (1998) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17512",
+                     "name":"Avengers (1998) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17523",
+                     "name":"Avengers (1998) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/1311",
+                     "name":"Avengers Assemble (Hardcover)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/65952",
+                     "name":"Cable/Machine Man Annual (1998) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/65120",
+                     "name":"Cable: The Hellfire Hunt (Trade Paperback)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/67950",
+                     "name":"Captain Marvel: Carol Danvers - The Ms. Marvel Years Vol. 2 (Trade Paperback)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/59966",
+                     "name":"Deadpool & the Mercs for Money (2016) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/59967",
+                     "name":"Deadpool & the Mercs for Money (2016) #5"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/59968",
+                     "name":"Deadpool & the Mercs for Money (2016) #6"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/62508",
+                     "name":"Deadpool & the Mercs for Money (2016) #7"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/62586",
+                     "name":"Deadpool & the Mercs for Money (2016) #8"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/30856",
+                     "name":"Deadpool Team-Up Vol. 2: Special Relationship (Trade Paperback)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/8548",
+                     "name":"Earth X (1999) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/8554",
+                     "name":"Earth X (1999) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/8555",
+                     "name":"Earth X (1999) #5"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/8556",
+                     "name":"Earth X (1999) #6"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":27,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010805/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/29692",
+                     "name":"2020 Iron Age (2020)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/29695",
+                     "name":"2020 Machine Man (2020)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/354",
+                     "name":"Avengers (1998 - 2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1340",
+                     "name":"Avengers Assemble (2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/23926",
+                     "name":"Cable/Machine Man Annual (1998)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/23685",
+                     "name":"Cable: The Hellfire Hunt (2017)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/24528",
+                     "name":"Captain Marvel: Carol Danvers - The Ms. Marvel Years Vol. 2 (2018)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/21942",
+                     "name":"Deadpool & the Mercs for Money (2016 - 2017)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/10144",
+                     "name":"Deadpool Team-Up Vol. 2: Special Relationship (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/378",
+                     "name":"Earth X (1999 - 2000)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1806",
+                     "name":"EARTH X TPB (2006)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3374",
+                     "name":"Hulk (2008 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2029",
+                     "name":"Iron Man (1968 - 1996)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/27110",
+                     "name":"Kirby Returns! King-Size (2019)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/22669",
+                     "name":"Machine Man (1978 - 1981)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/26525",
+                     "name":"Machine Man (1984 - 1985)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/23927",
+                     "name":"Machine Man/Bastion Annual (1998)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2039",
+                     "name":"Marvel Comics Presents (1988 - 1995)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2815",
+                     "name":"Marvel Comics Presents (2007 - 2008)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9719",
+                     "name":"Marvel Zombies 5 (2010)"
+                  }
+               ],
+               "returned":20
+            },
+            "stories":{
+               "available":115,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010805/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/19284",
+                     "name":"Iron Man (1968) #168",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/19285",
+                     "name":"The Iron Scream",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/22676",
+                     "name":"Machine Man Meets the F. F. ... Failure Five",
+                     "type":""
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24902",
+                     "name":"Cover #24902",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24903",
+                     "name":"Earth X",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24904",
+                     "name":"Cover #24904",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24907",
+                     "name":"Cover #24907",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24924",
+                     "name":"Appendix to Chapter Four",
+                     "type":"text story"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24927",
+                     "name":"Appendix to Chapter Five",
+                     "type":"text story"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24930",
+                     "name":"Appendix to Chapter Six",
+                     "type":"text story"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24933",
+                     "name":"Appendix to Chapter Seven",
+                     "type":"text story"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/24936",
+                     "name":"Appendix to Chapter Eight",
+                     "type":"text story"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/26017",
+                     "name":"Cover #26017",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/26039",
+                     "name":"Cover #26039",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37337",
+                     "name":"Cover #37337",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37338",
+                     "name":"Once an Avenger...",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37359",
+                     "name":"Avengers (1998) #2",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37360",
+                     "name":"The Call",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37386",
+                     "name":"Fata Morgana",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37408",
+                     "name":"Avengers (1998) #4",
+                     "type":"cover"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":1,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010805/events",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/334",
+                     "name":"Inhumans Vs. X-Men"
+                  }
+               ],
+               "returned":1
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/comics/characters/1010805/machine_man?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/Machine_Man?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1010805/machine_man?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1011360,
+            "name":"Red Hulk",
+            "description":"",
+            "modified":"2013-01-25T13:16:37-0500",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/5/90/5102cb7fc1262",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1011360",
+            "comics":{
+               "available":99,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011360/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/43488",
+                     "name":"A+X (2012) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/41817",
+                     "name":"Amazing Spider-Man (1999) #669 (Slott Variant)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/41318",
+                     "name":"Amazing Spider-Man (1999) #669 (Architect Variant)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/41319",
+                     "name":"Amazing Spider-Man (1999) #669 (Architect Sketch Variant)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/39981",
+                     "name":"Annihilators: Earthfall (2011) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29210",
+                     "name":"Avengers (2010) #7"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/37008",
+                     "name":"Avengers (2010) #7 (MCGUINNESS VARIANT)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29211",
+                     "name":"Avengers (2010) #8"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29212",
+                     "name":"Avengers (2010) #9"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29196",
+                     "name":"Avengers (2010) #10"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29197",
+                     "name":"Avengers (2010) #11"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38617",
+                     "name":"Avengers (2010) #11 (CAPTAIN AMERICA 70TH ANNIVERSARY VARIANT)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29198",
+                     "name":"Avengers (2010) #12"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29199",
+                     "name":"Avengers (2010) #13"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29200",
+                     "name":"Avengers (2010) #14"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40405",
+                     "name":"Avengers (2010) #25"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40408",
+                     "name":"Avengers (2010) #31"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40403",
+                     "name":"Avengers (2010) #32"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40402",
+                     "name":"Avengers (2010) #33"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29333",
+                     "name":"Avengers By Brian Michael Bendis Vol. 2 Premiere HC (Hardcover)"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":27,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011360/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/16450",
+                     "name":"A+X (2012 - 2014)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/454",
+                     "name":"Amazing Spider-Man (1999 - 2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/14818",
+                     "name":"Annihilators: Earthfall (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9085",
+                     "name":"Avengers (2010 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/10051",
+                     "name":"Avengers By Brian Michael Bendis Vol. 2 Premiere HC (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/23504",
+                     "name":"Avengers by Brian Michael Bendis: The Complete Collection Vol. 1 (2017)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/15305",
+                     "name":"Avengers Vs. X-Men (2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/14703",
+                     "name":"Avengers: X-Sanction (2011 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/14246",
+                     "name":"Avenging Spider-Man (2011 - 2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/15623",
+                     "name":"Avenging Spider-Man Daily Bugle (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/789",
+                     "name":"Dark Avengers (2012 - 2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9187",
+                     "name":"Fall of the Hulks: Red Hulk (2010)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3374",
+                     "name":"Hulk (2008 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/7251",
+                     "name":"Hulk Vol. 2: Red & Green (2009 - Present)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/13839",
+                     "name":"HULK VOL. 2: RED & GREEN TPB (2009 - Present)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/11557",
+                     "name":"HULK VOL. 6: WORLD WAR HULKS TPB (2010 - Present)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/8842",
+                     "name":"Incredible Hulks (2010 - 2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/13745",
+                     "name":"MARVEL POINT ONE TPB (2011 - Present)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9922",
+                     "name":"New Avengers (2010 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/11151",
+                     "name":"RED HULK: SCORCHED EARTH TPB (2011)"
+                  }
+               ],
+               "returned":20
+            },
+            "stories":{
+               "available":134,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011360/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/53371",
+                     "name":"Hulk 7-9, King-Size Hulk 1",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/60415",
+                     "name":"INCREDIBLE HULKS (2010) #600",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/60573",
+                     "name":"INCREDIBLE HULKS (2010) #607",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/60575",
+                     "name":"Incredible Hulks (2009) #608",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/62473",
+                     "name":"Hulk: World War Hulks #1 ",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63583",
+                     "name":"Avengers (2010) #10",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63587",
+                     "name":"Avengers (2010) #12",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63588",
+                     "name":"Avengers (2010) #12",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63589",
+                     "name":"Avengers (2010) #13",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63590",
+                     "name":"Avengers (2010) #13",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63591",
+                     "name":"Avengers (2010) #14",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63611",
+                     "name":"Avengers (2010) #7",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63612",
+                     "name":"Avengers (2010) #7",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63613",
+                     "name":"Avengers (2010) #8",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63614",
+                     "name":"Avengers (2010) #8",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63615",
+                     "name":"Avengers (2010) #9",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63616",
+                     "name":"Avengers (2010) #9",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/63820",
+                     "name":"Interior #63820",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/64919",
+                     "name":"Interior #64919",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/68888",
+                     "name":"Cover #68888",
+                     "type":"cover"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":5,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011360/events",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/310",
+                     "name":"Avengers VS X-Men"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/297",
+                     "name":"Fall of the Hulks"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/302",
+                     "name":"Fear Itself"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/336",
+                     "name":"Secret Empire"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/60",
+                     "name":"World War Hulks"
+                  }
+               ],
+               "returned":5
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/comics/characters/1011360/red_hulk?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/Red_Hulk?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1011360/red_hulk?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1009583,
+            "name":"She-Hulk (Jennifer Walters)",
+            "description":"Seriously wounded, young lawyer Jennifer Walters was given a blood transfusion by her cousin Bruce Banner. Usually in better control of her powers and temper than the Hulk, She-Hulk has been a high profile New York lawyer as well as an upstanding member of both the Avengers and Fantastic Four.",
+            "modified":"2014-01-24T18:10:30-0500",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/7/20/527bb5d64599e",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1009583",
+            "comics":{
+               "available":453,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009583/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/58636",
+                     "name":"Marvel New Year's Eve Special Infinite Comic (2017) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/56017",
+                     "name":"A-Force (2016) #6"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/56018",
+                     "name":"A-Force (2016) #7"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/56019",
+                     "name":"A-Force (2016) #8"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/56021",
+                     "name":"A-Force (2016) #10"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/24348",
+                     "name":"Adam: Legend of the Blue Marvel (Trade Paperback)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/22461",
+                     "name":"Adam: Legend of the Blue Marvel (2008) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/37405",
+                     "name":"Age of Ultron (2013) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/37406",
+                     "name":"Age of Ultron (2013) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/24053",
+                     "name":"All-New Savage She-Hulk (2009) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/24252",
+                     "name":"All-New Savage She-Hulk (2009) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/60276",
+                     "name":"All-New, All-Different Avengers Annual (2016) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12725",
+                     "name":"Alpha Flight (1983) #61"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12651",
+                     "name":"Alpha Flight (1983) #111"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/12668",
+                     "name":"Alpha Flight (1983) #127"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29321",
+                     "name":"Atlantis Attacks (2011) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29322",
+                     "name":"Atlantis Attacks (DM Only) (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17490",
+                     "name":"Avengers (1998) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/67002",
+                     "name":"Avengers (2018) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/67311",
+                     "name":"Avengers (2018) #2"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":148,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009583/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/20606",
+                     "name":"A-Force (2016)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/7524",
+                     "name":"Adam: Legend of the Blue Marvel (2008)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/6079",
+                     "name":"Adam: Legend of the Blue Marvel (2008)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/17318",
+                     "name":"Age of Ultron (2013)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/7231",
+                     "name":"All-New Savage She-Hulk (2009)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/22190",
+                     "name":"All-New, All-Different Avengers Annual (2016)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2116",
+                     "name":"Alpha Flight (1983 - 1994)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/10030",
+                     "name":"Atlantis Attacks (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/10031",
+                     "name":"Atlantis Attacks (DM Only) (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1991",
+                     "name":"Avengers (1963 - 1996)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/354",
+                     "name":"Avengers (1998 - 2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/24229",
+                     "name":"Avengers (2018 - Present)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1988",
+                     "name":"Avengers Annual (1967 - 1994)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1340",
+                     "name":"Avengers Assemble (2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1737",
+                     "name":"Avengers Assemble Vol. 3 (2006)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1816",
+                     "name":"Avengers Assemble Vol. 4 (2007)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/2384",
+                     "name":"Avengers Classic (2007 - 2008)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3971",
+                     "name":"Avengers Fairy Tales (2008)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/158",
+                     "name":"Avengers Vol. 1: World Trust (2003)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/227",
+                     "name":"Avengers Vol. 2: Red Zone (2003)"
+                  }
+               ],
+               "returned":20
+            },
+            "stories":{
+               "available":525,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009583/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/698",
+                     "name":"UNCANNY X-MEN (1963) #435",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1054",
+                     "name":"Avengers (1998) #72",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1947",
+                     "name":"Avengers (1998) #78",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/1949",
+                     "name":"Avengers (1998) #79",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2092",
+                     "name":"Interior #2092",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2249",
+                     "name":"UNCANNY X-MEN (1963) #436",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/2326",
+                     "name":"Avengers (1998) #74",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3130",
+                     "name":"1 of 1 - Hercules",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3132",
+                     "name":"Interior #3132",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3134",
+                     "name":"Interior #3134",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3136",
+                     "name":"Interior #3136",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3138",
+                     "name":"Interior #3138",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3140",
+                     "name":"Interior #3140",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3142",
+                     "name":"\"SPACE CASES\" As a superhuman lawyer, SHE-HULK has tried some of the strangest cases on Earth... but all of that is about to cha",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3144",
+                     "name":"\"ENGAGEMENT RING\" PART 2 (OF 2) A titanic tale of foxy boxing in outer space! Yes, FOXY BOXING! On a planet where might makes ri",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3145",
+                     "name":"1 of 3 - Titania",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3146",
+                     "name":"1 of 3 - Titania",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3148",
+                     "name":"2 of 3 - Titania",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/3150",
+                     "name":"3 of 3 - Titania",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/4125",
+                     "name":"3 of 3 - Titannus War",
+                     "type":"cover"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":15,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1009583/events",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/116",
+                     "name":"Acts of Vengeance!"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/314",
+                     "name":"Age of Ultron"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/233",
+                     "name":"Atlantis Attacks"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/296",
+                     "name":"Chaos War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/238",
+                     "name":"Civil War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/318",
+                     "name":"Dark Reign"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/297",
+                     "name":"Fall of the Hulks"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/302",
+                     "name":"Fear Itself"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/29",
+                     "name":"Infinity War"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/37",
+                     "name":"Maximum Security"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/269",
+                     "name":"Secret Invasion"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/270",
+                     "name":"Secret Wars"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/271",
+                     "name":"Secret Wars II"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/277",
+                     "name":"World War Hulk"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/280",
+                     "name":"X-Tinction Agenda"
+                  }
+               ],
+               "returned":15
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/characters/51/she-hulk?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/She-Hulk_(Jennifer_Walters)?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1009583/she-hulk_jennifer_walters?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1011392,
+            "name":"She-Hulk (Lyra)",
+            "description":"",
+            "modified":"2013-11-01T16:50:43-0400",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/6/03/527413f4341f7",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1011392",
+            "comics":{
+               "available":23,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011392/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/24053",
+                     "name":"All-New Savage She-Hulk (2009) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/24252",
+                     "name":"All-New Savage She-Hulk (2009) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/26243",
+                     "name":"All-New Savage She-Hulk (2009) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29807",
+                     "name":"Fall of the Hulks: The Savage She-Hulks (2010) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29808",
+                     "name":"Fall of the Hulks: The Savage She-Hulks (2010) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29809",
+                     "name":"Fall of the Hulks: The Savage She-Hulks (2010) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38941",
+                     "name":"Fear Itself: The Deep (2011) #1"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38942",
+                     "name":"Fear Itself: The Deep (2011) #2"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38949",
+                     "name":"Fear Itself: The Deep (2011) #3"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/38948",
+                     "name":"Fear Itself: The Deep (2011) #4"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40632",
+                     "name":"Hulk (2008) #53"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40630",
+                     "name":"Hulk (2008) #54"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40628",
+                     "name":"Hulk (2008) #55"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/40622",
+                     "name":"Hulk (2008) #57"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29541",
+                     "name":"Incredible Hulks (2010) #602 (SHS VARIANT)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29979",
+                     "name":"Incredible Hulks (2010) #603 (SHS VARIANT)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/28668",
+                     "name":"Incredible Hulks (2010) #603 (ZOMBIE VARIANT)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/29830",
+                     "name":"Incredible Hulks (2010) #605 (DJURDJEVIC 70TH ANNIVERSARY VARIANT)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/30015",
+                     "name":"Incredible Hulks (2010) #607 (MCGUINNESS VARIANT)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/34472",
+                     "name":"She-Hulks (2010) #1"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":6,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011392/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/7231",
+                     "name":"All-New Savage She-Hulk (2009)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/9306",
+                     "name":"Fall of the Hulks: The Savage She-Hulks (2010)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/14059",
+                     "name":"Fear Itself: The Deep (2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3374",
+                     "name":"Hulk (2008 - 2012)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/8842",
+                     "name":"Incredible Hulks (2010 - 2011)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/11799",
+                     "name":"She-Hulks (2010 - 2011)"
+                  }
+               ],
+               "returned":6
+            },
+            "stories":{
+               "available":31,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011392/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/53330",
+                     "name":"4XLS 1 of 4",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/53730",
+                     "name":"4XLS 2 of 4",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/57785",
+                     "name":"Cover #57785",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/64760",
+                     "name":"FALL OF THE HULKS: THE SAVAGE SHE-HULKS (2010) #1",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/80391",
+                     "name":"Cover From She-Hulks (2010) #3",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/80395",
+                     "name":"She-Hulks #4",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/80397",
+                     "name":"Cover #80397",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/80411",
+                     "name":"Cover #80411",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85445",
+                     "name":"Fear Itself: The Deep (2011) #1",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85446",
+                     "name":"Fear Itself: The Deep #1",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85447",
+                     "name":"Fear Itself: The Deep (2011) #2",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85448",
+                     "name":"Interior #85448",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85459",
+                     "name":"Fear Itself: The Deep (2011) #4",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85460",
+                     "name":"Fear Itself: The Deep (2011) #4 - Int",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85461",
+                     "name":"Fear Itself: The Deep (2011) #3",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/85462",
+                     "name":"Interior #85462",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92066",
+                     "name":"Hulk (2008) #57",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92067",
+                     "name":"Interior #92067",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92078",
+                     "name":"Hulk (2008) #55",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/92079",
+                     "name":"Interior #92079",
+                     "type":"interiorStory"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":3,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1011392/events",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/318",
+                     "name":"Dark Reign"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/297",
+                     "name":"Fall of the Hulks"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/events/302",
+                     "name":"Fear Itself"
+                  }
+               ],
+               "returned":3
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/comics/characters/1011392/she-hulk_lyra?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/Lyra?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1011392/she-hulk_lyra?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         },
+         {
+            "id":1010864,
+            "name":"Silverclaw",
+            "description":"When her father died, Lupe was taken in by the Church orphanage, despite their misgivings about her “ungodly” powers.",
+            "modified":"1969-12-31T19:00:00-0500",
+            "thumbnail":{
+               "path":"http://i.annihil.us/u/prod/marvel/i/mg/2/70/4c0035b922e12",
+               "extension":"jpg"
+            },
+            "resourceURI":"http://gateway.marvel.com/v1/public/characters/1010864",
+            "comics":{
+               "available":21,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010864/comics",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17567",
+                     "name":"Avengers (1998) #8"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17573",
+                     "name":"Avengers (1998) #9"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17508",
+                     "name":"Avengers (1998) #26"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17509",
+                     "name":"Avengers (1998) #27"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17510",
+                     "name":"Avengers (1998) #28"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17511",
+                     "name":"Avengers (1998) #29"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17513",
+                     "name":"Avengers (1998) #30"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17522",
+                     "name":"Avengers (1998) #39"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17524",
+                     "name":"Avengers (1998) #40"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17528",
+                     "name":"Avengers (1998) #44"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17530",
+                     "name":"Avengers (1998) #46"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17531",
+                     "name":"Avengers (1998) #47"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17532",
+                     "name":"Avengers (1998) #48"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17537",
+                     "name":"Avengers (1998) #52"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17540",
+                     "name":"Avengers (1998) #55"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/17541",
+                     "name":"Avengers (1998) #56"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/1311",
+                     "name":"Avengers Assemble (Hardcover)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/4461",
+                     "name":"Avengers Assemble Vol. 3 (Hardcover)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/5844",
+                     "name":"Avengers Assemble Vol. 4 (Hardcover)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/comics/1038",
+                     "name":"Avengers: The Kang Dynasty (Trade Paperback)"
+                  }
+               ],
+               "returned":20
+            },
+            "series":{
+               "available":6,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010864/series",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/354",
+                     "name":"Avengers (1998 - 2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1340",
+                     "name":"Avengers Assemble (2004)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1737",
+                     "name":"Avengers Assemble Vol. 3 (2006)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/1816",
+                     "name":"Avengers Assemble Vol. 4 (2007)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/98",
+                     "name":"Avengers: The Kang Dynasty (2002)"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/series/3374",
+                     "name":"Hulk (2008 - 2012)"
+                  }
+               ],
+               "returned":6
+            },
+            "stories":{
+               "available":22,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010864/stories",
+               "items":[
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37373",
+                     "name":"Avengers (1998) #26",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37374",
+                     "name":"...Under Cover of Night!",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37376",
+                     "name":"New Order",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37382",
+                     "name":"The Death-Song of Kulan Gath: Long Shadows of Forgotten Spires",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37383",
+                     "name":"Avengers (1998) #29",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37384",
+                     "name":"The Death-Song of Kulan Gath: A Dream of Bitter Ash",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37387",
+                     "name":"Avengers (1998) #30",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37388",
+                     "name":"The Death-Song of Kulan Gath: Conclusion!",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37407",
+                     "name":"Condition: Green",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37412",
+                     "name":"Thoom",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37420",
+                     "name":"Down Among the Dead Men!",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37424",
+                     "name":"Absolute Mastery",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37426",
+                     "name":"In the Heart of Battle",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37428",
+                     "name":"War Plan \"A\"",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37442",
+                     "name":"Counter Attack",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37449",
+                     "name":"The Last Farewell",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37451",
+                     "name":"\"Lo, There Shall Come... an Accounting!\"",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37489",
+                     "name":"Turbulence!",
+                     "type":"interiorStory"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37490",
+                     "name":"Avengers (1998) #9",
+                     "type":"cover"
+                  },
+                  {
+                     "resourceURI":"http://gateway.marvel.com/v1/public/stories/37491",
+                     "name":"The Villain who Fell From Grace with the Earth",
+                     "type":"interiorStory"
+                  }
+               ],
+               "returned":20
+            },
+            "events":{
+               "available":0,
+               "collectionURI":"http://gateway.marvel.com/v1/public/characters/1010864/events",
+               "items":[
+                  
+               ],
+               "returned":0
+            },
+            "urls":[
+               {
+                  "type":"detail",
+                  "url":"http://marvel.com/characters/2103/silverclaw?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"wiki",
+                  "url":"http://marvel.com/universe/Silverclaw?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               },
+               {
+                  "type":"comiclink",
+                  "url":"http://marvel.com/comics/characters/1010864/silverclaw?utm_campaign=apiRef&utm_source=d6e02dd7c891815142fcac32c5c10859"
+               }
+            ]
+         }
+      ]
+   }
+}
