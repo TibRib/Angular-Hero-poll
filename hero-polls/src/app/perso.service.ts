@@ -19,7 +19,6 @@ const MARVEL_PRIV_KEY = "7124daa3a6fc215551ec2e84c5127989333906ef";
 })
 export class PersoService {
   marvel_page : number = 0
-  selectedHero : BehaviorSubject<Perso> = new BehaviorSubject(this.createPerso())
 
   constructor(private http: HttpClient) { }
   
@@ -118,19 +117,19 @@ export class PersoService {
     /*
     this.http.get(MARVEL_URL+"/v1/public/characters/"+id, { headers })
     */
-    //let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPerso());
+    let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPerso());
     this.http.get("./assets/json_templates/characters.json").subscribe(response =>{
       console.log("here")
       let data = response["data"];
       let results = data["results"];
       let hero = results[0];
 
-      this.selectedHero.next(
+      perso.next(
         this.createPersoWith( hero["id"], hero["name"],hero["description"],[],[],"Marvel",hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],hero["resourceURI"])
       );
     });
 
-    return this.selectedHero.asObservable();
+    return perso.asObservable();
   }
 
 
