@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import {Md5} from 'ts-md5/dist/md5';
 import { Perso } from './perso';
 import { BehaviorSubject, Observable } from 'rxjs';
@@ -10,56 +10,22 @@ import { BehaviorSubject, Observable } from 'rxjs';
   docs : https://developer.marvel.com/docs
   */
 
-const MARVEL_URL = "marvel";
+const MARVEL_URL = "/marvel";
 const MARVEL_PUB_KEY= "d6e02dd7c891815142fcac32c5c10859";
 const MARVEL_PRIV_KEY = "7124daa3a6fc215551ec2e84c5127989333906ef";
 
-const MOCKUP_DATA = true;
+const MOCKUP_DATA = false;
 
 @Injectable({
   providedIn: 'root'
 })
 export class PersoService {
-  marvel_page : number = 0
 
-  constructor(private http: HttpClient) { }
-  
-  getPersosMARVEL(): Array<Perso>{
-    var ts = String(Date.now());
-    const headers = { 
-      "apikey": MARVEL_PUB_KEY,
-      "ts": ts,
-      "hash": String(  Md5.hashStr(ts+MARVEL_PRIV_KEY+MARVEL_PUB_KEY) ), //Hash = md5 ( ts+privateKey+publicKey )
-      "limit" : String(24),
-      "offset" : String(this.marvel_page*24),
-    };
-    console.log(headers);
-
-    let urlGet ="";
-    if(MOCKUP_DATA){
-      urlGet = "./assets/json_templates/characters.json";
-    }else{
-      urlGet = MARVEL_URL+"/v1/public/characters";
-    }
-
-     let persos : Array<Perso> = [];
-     
-     this.http.get(urlGet, {headers}).subscribe(response =>{
-       let data = response["data"];
-       let results = data["results"];
-       console.log(results);
-
-       results.forEach(hero => {
-
-        if(hero["description"] || hero["thumbnail"]){
-         persos.push(
-           this.createPersoWith( hero["id"], hero["name"],hero["description"],[],[],"Marvel",hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],hero["resourceURI"])
-           );
-        }
-       });
-    });
-
-     return persos;
+  constructor(private http: HttpClient) { 
+    if(MOCKUP_DATA)   console.info("%cRunning PersoService in MOCKUP Json mode",
+                                    "color: white; font-style: italic; background-color: blue;padding: 2px");
+    else              console.info("%cRunning PersoService in Live mode",
+                                    "color: black; font-style: italic; background-color: orange;padding: 2px");
   }
 
   createPerso() : Perso{
@@ -88,16 +54,51 @@ export class PersoService {
     };
   }
 
-  getPersoMARVEL(id : number) : Observable<Perso> {
-    console.log("call to getPersoMarvel")
-    var ts = String(Date.now());
-    const headers = { 
-      "apikey": MARVEL_PUB_KEY,
-      "ts": ts,
-      "hash": String(  Md5.hashStr(ts+MARVEL_PRIV_KEY+MARVEL_PUB_KEY) ), //Hash = md5 ( ts+privateKey+publicKey )
-    };
-    console.log(headers);
+  /* -------- Marvel Related functions ------------ */
 
+  marvelParameters() : HttpParams{
+    let ts = String(Date.now());
+    return new HttpParams() 
+      .set('apikey', MARVEL_PUB_KEY)
+      .set('ts', ts)
+      .set('hash', String(  Md5.hashStr(ts+MARVEL_PRIV_KEY+MARVEL_PUB_KEY) ))
+            //Hash = md5 ( ts+privateKey+publicKey )
+  }
+
+  marvelPageParameters(page : number) : HttpParams{
+    return this.marvelParameters()
+      .set('limit',  String(24))
+      .set('offset',  String(page*24));
+  }
+
+  getPersosMARVEL(page : number): Array<Perso>{
+    let urlGet ="";
+    if(MOCKUP_DATA){
+      urlGet = "./assets/json_templates/characters.json";
+    }else{
+      urlGet = MARVEL_URL+"/v1/public/characters";
+    }
+
+    const params = this.marvelPageParameters(page);
+    let persos : Array<Perso> = [];
+     
+     this.http.get(urlGet, {params}).subscribe(response =>{
+       let data = response["data"];
+       let results = data["results"];
+
+       results.forEach(hero => {
+        if(hero["description"] || hero["thumbnail"]){
+         persos.push(
+           this.createPersoWith( hero["id"], hero["name"],hero["description"],[],[],"Marvel",hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],hero["resourceURI"])
+           );
+        }
+       });
+    });
+
+     return persos;
+  }
+
+  getPersoMARVEL(id : number) : Observable<Perso> {
     let urlGet = "";
     if(MOCKUP_DATA){
       urlGet = "./assets/json_templates/character.json";
@@ -105,10 +106,10 @@ export class PersoService {
       urlGet = MARVEL_URL+"/v1/public/characters/"+id;
     }
 
+    const params = this.marvelParameters();
     let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPerso());
 
-    this.http.get(urlGet, { headers }).subscribe(response =>{
-      console.log("here")
+    this.http.get(urlGet, { params }).subscribe(response =>{
       let data = response["data"];
       let results = data["results"];
       let hero = results[0];
@@ -120,6 +121,5 @@ export class PersoService {
 
     return perso.asObservable();
   }
-
 
 }

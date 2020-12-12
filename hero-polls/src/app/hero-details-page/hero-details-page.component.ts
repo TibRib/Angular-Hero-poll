@@ -31,7 +31,6 @@ export class HeroDetailsPageComponent implements OnInit {
       switch(origin){
         case 'Marvel':
         case 'marvel':
-          console.log("aaaaaaa")
           this.persoService.getPersoMARVEL(id).subscribe((r)=> this.personnage=r);
           break;
         
