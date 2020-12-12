@@ -16,7 +16,7 @@ import { Observable } from 'rxjs';
   ]
 })
 export class HeroDetailsPageComponent implements OnInit {
-  personnage : Perso = null;
+  personnage : Perso;
 
   constructor(
     private route: ActivatedRoute,
@@ -26,12 +26,22 @@ export class HeroDetailsPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
-      const id : number = +this.route.snapshot.paramMap.get('id');
+      const id_parameter = this.route.snapshot.paramMap.get('id');
+      const id : number = +id_parameter;
       const origin : string = this.route.snapshot.paramMap.get('origin');
       switch(origin){
         case 'Marvel':
         case 'marvel':
-          this.persoService.getPersoMARVEL(id).subscribe((r)=> this.personnage=r);
+          if(id_parameter == "random"){
+            console.log("detected random id ! fetching...");
+            this.persoService.getRandomPersoMARVEL()
+              .subscribe( r =>{
+                 this.personnage=r;
+                 console.log(r)
+                });
+          }else{
+            this.persoService.getPersoMARVEL(id).subscribe((r)=> this.personnage=r);
+          }
           break;
         
         default:

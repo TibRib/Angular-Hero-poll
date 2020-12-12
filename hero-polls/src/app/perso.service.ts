@@ -13,6 +13,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 const MARVEL_URL = "/marvel";
 const MARVEL_PUB_KEY= "d6e02dd7c891815142fcac32c5c10859";
 const MARVEL_PRIV_KEY = "7124daa3a6fc215551ec2e84c5127989333906ef";
+const MARVEL_MAX_DATA = 1493; //Id maximal des super héros marvel
 
 const MOCKUP_DATA = false;
 
@@ -20,6 +21,7 @@ const MOCKUP_DATA = false;
   providedIn: 'root'
 })
 export class PersoService {
+  pageLength : number = 24
 
   constructor(private http: HttpClient) { 
     if(MOCKUP_DATA)   console.info("%cRunning PersoService in MOCKUP Json mode",
@@ -67,8 +69,8 @@ export class PersoService {
 
   marvelPageParameters(page : number) : HttpParams{
     return this.marvelParameters()
-      .set('limit',  String(24))
-      .set('offset',  String(page*24));
+      .set('limit',  String(this.pageLength))
+      .set('offset',  String(page*this.pageLength));
   }
 
   getPersosMARVEL(page : number): Observable<Array<Perso>>{
@@ -88,11 +90,9 @@ export class PersoService {
 
        let persosRecus: Array<Perso> = []
        results.forEach(hero => {
-        if(hero["description"] || hero["thumbnail"]){
           persosRecus.push(
            this.createPersoWith( hero["id"], hero["name"],hero["description"],[],[],"Marvel",hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],hero["resourceURI"])
            );
-        }
        });
        persos.next(persosRecus);
     });
@@ -119,6 +119,27 @@ export class PersoService {
       perso.next(
         this.createPersoWith( hero["id"], hero["name"],hero["description"],[],[],"Marvel",hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],hero["resourceURI"])
       );
+    });
+
+    return perso.asObservable();
+  }
+
+  isExploitable(indiv : Perso){
+    return (indiv.description.length>0 && ( indiv.image.length>0 && !indiv.image.endsWith("image_not_available.jpg")) )
+  }
+
+  //returns a randomized character that has a valid description and image
+  //Will return the first character in list that has
+  getRandomPersoMARVEL() : Observable<Perso>{
+    let pageLength = this.pageLength;
+    let randomOffset = Math.floor(Math.random()*(1493 - this.pageLength));
+    let resultingPageFlt = randomOffset/pageLength;
+    
+    let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPerso());
+
+    this.getPersosMARVEL(resultingPageFlt).subscribe(persos =>{
+      let found = persos.find(indiv => this.isExploitable(indiv));
+      perso.next(found);
     });
 
     return perso.asObservable();
