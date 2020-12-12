@@ -9,7 +9,8 @@ import { HeroDetailsPageComponent } from './hero-details-page';
 const routes: Routes = [
   { path : '', component: HomeComponent },
   { path : 'versus', component: VersusPageComponent },
-  { path : 'heroes', component: AllHeroesPageComponent },
+  { path: 'heroes', redirectTo: 'heroes/1', pathMatch: 'full' },
+  { path : 'heroes/:page', component: AllHeroesPageComponent },
   { path : 'details/:origin/:id', component: HeroDetailsPageComponent },
 
   //Redirection home si non trouvé

@@ -71,7 +71,7 @@ export class PersoService {
       .set('offset',  String(page*24));
   }
 
-  getPersosMARVEL(page : number): Array<Perso>{
+  getPersosMARVEL(page : number): Observable<Array<Perso>>{
     let urlGet ="";
     if(MOCKUP_DATA){
       urlGet = "./assets/json_templates/characters.json";
@@ -80,22 +80,24 @@ export class PersoService {
     }
 
     const params = this.marvelPageParameters(page);
-    let persos : Array<Perso> = [];
+    let persos :BehaviorSubject<Array<Perso>> = new BehaviorSubject<Array<Perso>>([]);
      
      this.http.get(urlGet, {params}).subscribe(response =>{
        let data = response["data"];
        let results = data["results"];
 
+       let persosRecus: Array<Perso> = []
        results.forEach(hero => {
         if(hero["description"] || hero["thumbnail"]){
-         persos.push(
+          persosRecus.push(
            this.createPersoWith( hero["id"], hero["name"],hero["description"],[],[],"Marvel",hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],hero["resourceURI"])
            );
         }
        });
+       persos.next(persosRecus);
     });
 
-     return persos;
+     return persos.asObservable();
   }
 
   getPersoMARVEL(id : number) : Observable<Perso> {

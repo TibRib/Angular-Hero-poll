@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Location } from '@angular/common';
 
 import {NgbConfig} from '@ng-bootstrap/ng-bootstrap';
 import { Perso } from '../perso';
@@ -27,20 +29,24 @@ import { PersoService } from '../perso.service';
 export class AllHeroesPageComponent implements OnInit {
   heros : Array<Perso>
   page : number = 1;
-  constructor(private heroService: PersoService) { 
+  constructor(private heroService: PersoService, private route: ActivatedRoute, private location: Location) { 
   }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((params: ParamMap) => {
+       this.page = +this.route.snapshot.paramMap.get('page');
+    });
     this.fetchHeroes();
   }
 
   fetchHeroes(): void{
-    this.heros = this.heroService.getPersosMARVEL(this.page-1);
+    this.heroService.getPersosMARVEL(this.page-1).subscribe((r)=> this.heros=r);
   }
 
   setPage(value){
     this.page = value;
     console.log("Page updated to "+this.page);
+    this.location.replaceState("/heroes/"+value)
     this.fetchHeroes();
   }
 
