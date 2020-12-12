@@ -13,6 +13,7 @@ import { HomeComponent } from './home-page';
 import { HeroDetailsPageComponent } from './hero-details-page';
 
 import { HttpClientModule } from '@angular/common/http';
+import { HeroDetailsComponent } from './hero-details/hero-details.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     VersusPageComponent,
     AllHeroesPageComponent,
     HomeComponent,
-    HeroDetailsPageComponent
+    HeroDetailsPageComponent,
+    HeroDetailsComponent
   ],
   imports: [
     BrowserModule,
