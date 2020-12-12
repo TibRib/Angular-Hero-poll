@@ -85,10 +85,16 @@ export class PersoService {
   //Returns an observable array of the marvel heroes listed in the provided URI, with a limit of this.PageLength if required
   getPersosfromURIMARVEL(URI : string, asPage : boolean = false, pageId:number=0): Observable<Array<Perso>>{
     let urlGet ="";
+    console.log("URI : "+URI);
     if(MOCKUP_DATA){
       urlGet = "./assets/json_templates/characters.json";
     }else{
-      let formattedURI = URI.substring(URI.indexOf('/')-1)
+      let http_index = URI.indexOf('://');
+      let formattedURI= URI;
+      if(http_index>0){
+        formattedURI = URI.substring(URI.indexOf('://')+3)
+      }
+      formattedURI = formattedURI.substring(formattedURI.indexOf('/'))
       urlGet = MARVEL_URL+formattedURI;
     }
 
