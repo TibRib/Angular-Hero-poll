@@ -14,6 +14,8 @@ const MARVEL_URL = "marvel";
 const MARVEL_PUB_KEY= "d6e02dd7c891815142fcac32c5c10859";
 const MARVEL_PRIV_KEY = "7124daa3a6fc215551ec2e84c5127989333906ef";
 
+const MOCKUP_DATA = true;
+
 @Injectable({
   providedIn: 'root'
 })
@@ -31,36 +33,18 @@ export class PersoService {
       "limit" : String(24),
       "offset" : String(this.marvel_page*24),
     };
-
     console.log(headers);
-    /*
 
-    this.http.get("/marvel/v1/public/characters", { headers })
-      .subscribe(response => { 
-         let data = response["data"];
-       let results = data["results"];
-       console.log(results);
+    let urlGet ="";
+    if(MOCKUP_DATA){
+      urlGet = "./assets/json_templates/characters.json";
+    }else{
+      urlGet = MARVEL_URL+"/v1/public/characters";
+    }
 
-       results.forEach(hero => {
-
-        if(hero["description"] || hero["thumbnail"]){
-         persos.push({
-            id : hero["id"],
-            name: hero["name"],
-            description: hero["description"],
-            connections: [],
-            abilities : [],
-            origin : "Marvel",
-            image : hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],
-            URI : hero["resourceURI"]
-          });
-        }
-       });
-      });
-      */
      let persos : Array<Perso> = [];
      
-     this.http.get("./assets/json_templates/characters.json").subscribe(response =>{
+     this.http.get(urlGet, {headers}).subscribe(response =>{
        let data = response["data"];
        let results = data["results"];
        console.log(results);
@@ -112,13 +96,18 @@ export class PersoService {
       "ts": ts,
       "hash": String(  Md5.hashStr(ts+MARVEL_PRIV_KEY+MARVEL_PUB_KEY) ), //Hash = md5 ( ts+privateKey+publicKey )
     };
-
     console.log(headers);
-    /*
-    this.http.get(MARVEL_URL+"/v1/public/characters/"+id, { headers })
-    */
+
+    let urlGet = "";
+    if(MOCKUP_DATA){
+      urlGet = "./assets/json_templates/character.json";
+    }else{
+      urlGet = MARVEL_URL+"/v1/public/characters/"+id;
+    }
+
     let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPerso());
-    this.http.get("./assets/json_templates/characters.json").subscribe(response =>{
+
+    this.http.get(urlGet, { headers }).subscribe(response =>{
       console.log("here")
       let data = response["data"];
       let results = data["results"];
