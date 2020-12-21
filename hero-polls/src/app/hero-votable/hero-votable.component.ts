@@ -13,11 +13,11 @@ import { Perso } from '../perso';
         <div class="col-6 align-self-center">
           <div class="d-flex align-items-start flex-column" style="height: 60%;">
             <div class="mb-auto p-2">
-              <h2>{{perso.name}}</h2>
-              <p>{{perso.origin}}</p>
+              <h2  [ngClass]="{'text-right': right }">{{perso.name}}</h2>
+              <p  [ngClass]="{'text-right': right }">{{perso.origin}}</p>
             </div>
-            <div class="p-2">
-            <button class="btn" (click)="selectionPersonnage()" [ngClass]="{'btn-danger': left, 'btn-primary': right }" >Vote</button>
+            <div class="p-2 btn-block">
+            <button class="btn" (click)="selectionPersonnage()" [ngClass]="{'btn-danger': left, 'btn-primary': right, 'float-right': right }" >Vote</button>
             </div>
           </div>
         </div>
