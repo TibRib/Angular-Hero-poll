@@ -15,7 +15,7 @@ const MARVEL_PUB_KEY= "d6e02dd7c891815142fcac32c5c10859";
 const MARVEL_PRIV_KEY = "7124daa3a6fc215551ec2e84c5127989333906ef";
 const MARVEL_MAX_DATA = 1493; //Id maximal des super héros marvel
 
-const MOCKUP_DATA = true;
+const MOCKUP_DATA = false;
 
 @Injectable({
   providedIn: 'root'
