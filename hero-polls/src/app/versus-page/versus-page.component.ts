@@ -24,7 +24,7 @@ import { PersoService } from '../perso.service';
         <span [ngClass]="{'d-none': madeChoice}" id="vs_label">VS.</span>
       </div>
 
-      <div class="col-5 p-2" id="hero_right">
+      <div class="col-4 p-2" id="hero_right">
         <hp-hero-votable [perso]="heroRight" [left]="false" (choisiEvent)="choixPersonnage($event)"></hp-hero-votable>
       </div>
       

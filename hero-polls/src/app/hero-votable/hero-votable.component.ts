@@ -28,7 +28,7 @@ import { Perso } from '../perso';
 
     <!-- Hero bottom section : description, abilities -->
     <section class="row">
-      <p class="mt-3 text-left">
+      <p class="mt-3" [ngClass]="{'text-right': right }">
       {{perso.description}}
       </p>
     </section>
