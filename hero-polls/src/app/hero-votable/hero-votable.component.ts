@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Perso } from '../perso';
 
 @Component({
@@ -17,7 +17,7 @@ import { Perso } from '../perso';
               <p>{{perso.origin}}</p>
             </div>
             <div class="p-2">
-            <button class="btn" [ngClass]="{'btn-danger': left, 'btn-primary': right }" >Vote</button>
+            <button class="btn" (click)="selectionPersonnage()" [ngClass]="{'btn-danger': left, 'btn-primary': right }" >Vote</button>
             </div>
           </div>
         </div>
@@ -41,11 +41,17 @@ export class HeroVotableComponent implements OnInit {
   @Input() left : boolean;
   right : boolean=false;
 
+  @Output() choisiEvent = new EventEmitter<Perso>();
+
   constructor() { 
   }
 
   ngOnInit(): void {
     this.right = !this.left;
+  }
+
+  selectionPersonnage(): void{
+    this.choisiEvent.next(this.perso);
   }
 
 }

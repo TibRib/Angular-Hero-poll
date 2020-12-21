@@ -11,21 +11,21 @@ import { PersoService } from '../perso.service';
 
     <div class="row">
       <div class="col-4 p-2" id="hero_left">
-        <hp-hero-votable [perso]="heroLeft" [left]="true"></hp-hero-votable>
+        <hp-hero-votable [perso]="heroLeft" [left]="true"  (choisiEvent)="choixPersonnage($event)"></hp-hero-votable>
       </div>
 
       <div class="col align-self-center text-center">
-        <div class="d-block" id="vs_bar">
+        <div [ngClass]="{'d-none': !madeChoice}" id="vs_bar">
           <div id="winningBar" class="p-2 d-flex justify-content-between rounded" style="background: linear-gradient(to right, red, blue);">
               <span>Yes</span>
               <span>no</span>
           </div>
         </div>
-        <span id="vs_label">VS.</span>
+        <span [ngClass]="{'d-none': madeChoice}" id="vs_label">VS.</span>
       </div>
 
       <div class="col-5 p-2" id="hero_right">
-        <hp-hero-votable [perso]="heroRight" [left]="false"></hp-hero-votable>
+        <hp-hero-votable [perso]="heroRight" [left]="false" (choisiEvent)="choixPersonnage($event)"></hp-hero-votable>
       </div>
       
     </div>
@@ -42,7 +42,8 @@ import { PersoService } from '../perso.service';
 })
 export class VersusPageComponent implements OnInit {
   heroLeft : Perso = null;
-  heroRight : Perso = null
+  heroRight : Perso = null;
+  madeChoice : boolean = false;
 
   constructor(private persoService: PersoService) { }
 
@@ -56,6 +57,15 @@ export class VersusPageComponent implements OnInit {
     this.persoService.getRandomPersoMARVEL().subscribe( r => {
       this.heroRight = r;
     });
+  }
+
+  choixPersonnage(perso : Perso){
+    if (this.madeChoice == true){
+      return;
+    }
+
+    this.madeChoice = true;
+    alert("Merci d'avoir voté pour "+perso.name)
   }
 
 }
