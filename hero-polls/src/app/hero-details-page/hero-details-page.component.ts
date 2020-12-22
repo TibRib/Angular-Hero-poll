@@ -40,7 +40,7 @@ export class HeroDetailsPageComponent implements OnInit {
                  console.log(r)
                 });
           }else{
-            this.persoService.getPersoMARVEL(id).subscribe((r)=> this.personnage=r);
+            this.persoService.getPersoMARVEL(id,true).subscribe((r)=> this.personnage=r);
           }
           break;
         

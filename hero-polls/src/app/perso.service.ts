@@ -161,7 +161,7 @@ export class PersoService {
   }
 
   //Returns a single hero from the marvel API, as an Observable
-  getPersoMARVEL(id : number) : Observable<Perso> {
+  getPersoMARVEL(id : number, getRelations : boolean) : Observable<Perso> {
     let urlGet = "";
     if(MOCKUP_DATA){
       urlGet = "./assets/json_templates/character.json";
@@ -177,13 +177,15 @@ export class PersoService {
       let results = data["results"];
       let hero = results[0];
 
+      //On instancie un personnage avec les attributs de chez Marvel
       perso.next(
         this.createPersoWith( hero["id"], hero["name"],hero["description"],[],[],"Marvel",hero["thumbnail"]["path"] +"."+ hero["thumbnail"]["extension"],hero["resourceURI"])
       );
-
-      this.getRelationsOfPersoMARVEL(hero["id"]).subscribe(list => {
-        perso.value.connections = list;
-      });
+      if(getRelations){ //Si l'on souhaite aussi le retour des personnages liés, on s'abonne à l'appel:
+        this.getRelationsOfPersoMARVEL(hero["id"]).subscribe(list => {
+          perso.value.connections = list;
+        });
+      }
 
     });
 

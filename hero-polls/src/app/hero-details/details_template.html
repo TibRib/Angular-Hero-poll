@@ -18,19 +18,20 @@
              <!-- Hero description -->
             <article class="col mt-2 mx-4">
                 {{personnage.description}}
+                <span class="text-dark" *ngIf="personnage.description.length===0">
+                    No description provided by {{personnage.origin}} for {{personnage.name}}...
+                </span>
             </article>
         </section>
 
         <!-- Connections : list of other heroes -->
-        <section class="row p-3" *ngIf="personnage.connections.length > 0">
-            <div class="col-2 p-0 mr-3">
+        <section class="row p-3 mt-5" >
+            <div class="col-12 p-0 ">
+                <h4><b>Relations: </b> <span>{{personnage.connections.length}}</span></h4>
                 <hr>
-                <h4><b>Connections</b></h4>
             </div>
-            <div class="col">
-                <hp-hero-list [heros]="personnage.connections">
-                </hp-hero-list>
-            </div>
+            <hp-hero-list [heros]="personnage.connections"> </hp-hero-list>
+          
         </section>
 
         
