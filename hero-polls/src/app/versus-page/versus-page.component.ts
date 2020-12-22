@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Perso } from '../perso';
 import { PersoService } from '../perso.service';
 import { Location } from '@angular/common';
+import { BattlesService } from '../battles.service';
 @Component({
   selector: 'hp-versus-page',
   template: `
@@ -61,7 +62,11 @@ export class VersusPageComponent implements OnInit {
 
   @Output() close = new EventEmitter();
 
-  constructor(private persoService: PersoService,  private router: Router, private location: Location) { }
+  constructor(private persoService: PersoService,
+              private battles : BattlesService,
+              private router: Router,
+              private location: Location)
+              { }
 
   ngOnInit(): void {
     this.heroLeft = this.persoService.createPerso();
@@ -75,14 +80,51 @@ export class VersusPageComponent implements OnInit {
     });
   }
 
+  /* 
+    Méthode qui valide le choix d'un personnage :
+    1 : Enregistre le vote en base / incrémente si existant
+    2 : Met à jour les valeurs associées aux résultats
+    3 : Autorise l'affichage des résultats
+  */
   choixPersonnage(perso : Perso): void{
+    //On vérifie que le vote n'a pas déjà été fait sur la page:
     if (this.madeChoice == true){
       return;
     }
+    //On récupère, si existant le combat en question
+    this.battles.getBattleBetween(this.heroLeft,this.heroRight).subscribe(
+      battle => {
+        //Log the result
+        console.log(battle);
 
-    this.madeChoice = true;
-    this.prctLeft = 32;
-    this.prctRight = 100-this.prctLeft;
+        //1 : Enregistre le vote en base / incrémente si existant
+        if(battle === null){ //Combat non éxistant entre ces deux personnages
+          //On enregistre un nouveau combat en base
+
+          //On incrémente la valeur de perso
+
+          //2 : Met à jour les valeurs associées aux résultats
+          //check perso: -- Placeholder
+          if(perso.id === this.heroLeft.id){
+            this.prctLeft = 100;
+            this.prctRight = 0;
+          }
+          else{
+            this.prctRight = 100;
+            this.prctLeft = 0;
+          }
+        }
+        else{
+          //Incrément de la valeur en base
+
+          //2 : Met à jour les valeurs associées aux résultats
+          this.prctLeft = 32;
+          this.prctRight = 100-this.prctLeft;
+        }
+
+        //3 : Autorise l'affichage des résultats, confirme le vote:
+        this.madeChoice = true;
+      });
   }
 
   refresh(){

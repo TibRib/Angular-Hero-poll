@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse, HttpHeaderResponse, HttpHeaders, HttpParams } from '@angular/common/http';
 import {Md5} from 'ts-md5/dist/md5';
 import { Perso } from './perso';
-import { BehaviorSubject, Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 /* MARVEL API 
   CALLS PER DAY : 3000
@@ -100,7 +100,7 @@ export class PersoService {
 
     //Get the paging specific parameters if asked as a parameter
     const params = asPage? this.marvelPageParameters(pageId) : this.marvelParameters();
-    let persos :BehaviorSubject<Array<Perso>> = new BehaviorSubject<Array<Perso>>([]);
+    let persos :Subject<Array<Perso>> = new Subject<Array<Perso>>();
      //Launch the subscription of the http GET
      this.http.get(urlGet, {params}).subscribe(response =>{
        let data = response["data"];
@@ -200,19 +200,26 @@ export class PersoService {
   //Will return the first hero in list that isExploitable*
   getRandomPersoMARVEL() : Observable<Perso>{
     let pageLength = this.pageLength;
+    
+    let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(
+      this.createPersoWith(-1,"Loading","Loading the hero",[],[],"Fetching...",
+      "https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e47kczqo3alpmzyq5mmfw9mrkqivuzo35i2ruhwmf6v&rid=giphy.gif","")
+      );
+
+    //On tente de trouver un perso randomisé convenable:
     let randomOffset = Math.floor(Math.random()*(1493 - this.pageLength));
     let resultingPageFlt = randomOffset/pageLength;
-    
-    let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPerso());
-
     this.getPersosMARVEL(resultingPageFlt).subscribe(persos =>{
-      let found = persos.find(indiv => this.isExploitable(indiv));
-      if (found){
+      //We try to pick the character that is the most complete (description and image)
+      let found : Perso | undefined = persos.find(indiv => this.isExploitable(indiv));
+      if (found === undefined){ //If none is available, we just pick the first one
+        perso.next(persos[0]);
+      }
+      else{ //We found a good character
         perso.next(found);
       }
       
     });
-
     return perso.asObservable();
   }
 
