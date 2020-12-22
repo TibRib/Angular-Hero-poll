@@ -19,7 +19,4 @@ describe('HeroDetailsPageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'hp-root',
   template: `
     <!-- navigation -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
+    <nav id="navbar" class="navbar navbar-expand navbar-dark bg-dark">
         <div class="navbar-nav">
             <a class="nav-item nav-link" routerLink="/">Home</a>
             <a class="nav-item nav-link" routerLink="/versus">Versus</a>
