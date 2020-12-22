@@ -86,9 +86,9 @@ export class VersusPageComponent implements OnInit {
   }
 
   refresh(){
+    //Pas très joli, mais workaround pour rafraichir la page
     this.router.navigateByUrl("/refresh",{skipLocationChange:true}).then(() => {
       let uri = decodeURI(this.location.path());
-      console.log("uri : "+uri);
       this.router.navigate([uri]);
     });
   }
