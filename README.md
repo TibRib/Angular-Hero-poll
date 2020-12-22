@@ -75,7 +75,7 @@ Affiche les combats-sondages déjà enregistrés sur le json-server, et donne la
 ![Battles Page](pictures/battles.PNG)
 
 ### Précisions
-Projet réalisé dans le cadre d'un devoir d'Angular,
+Projet réalisé en solitaire dans le cadre d'un devoir d'Angular,
 appels effectués de façon asynchrone.
 - Utilisation de l'API [Marvel](https://developer.marvel.com/) Tous droits réservés.
 - Utilisation aussi d'une API REST sur serveur local par le biais de json-server pour le stockage des sondages. (disponible sur le port 3000)
