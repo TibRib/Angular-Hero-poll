@@ -207,7 +207,10 @@ export class PersoService {
 
     this.getPersosMARVEL(resultingPageFlt).subscribe(persos =>{
       let found = persos.find(indiv => this.isExploitable(indiv));
-      perso.next(found);
+      if (found){
+        perso.next(found);
+      }
+      
     });
 
     return perso.asObservable();

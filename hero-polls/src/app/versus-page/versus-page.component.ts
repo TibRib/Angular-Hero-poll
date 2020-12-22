@@ -2,7 +2,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Perso } from '../perso';
 import { PersoService } from '../perso.service';
-
+import { Location } from '@angular/common';
 @Component({
   selector: 'hp-versus-page',
   template: `
@@ -61,7 +61,7 @@ export class VersusPageComponent implements OnInit {
 
   @Output() close = new EventEmitter();
 
-  constructor(private persoService: PersoService,  private router: Router) { }
+  constructor(private persoService: PersoService,  private router: Router, private location: Location) { }
 
   ngOnInit(): void {
     this.heroLeft = this.persoService.createPerso();
@@ -86,8 +86,11 @@ export class VersusPageComponent implements OnInit {
   }
 
   refresh(){
-    this.close.emit();
-    
+    this.router.navigateByUrl("/refresh",{skipLocationChange:true}).then(() => {
+      let uri = decodeURI(this.location.path());
+      console.log("uri : "+uri);
+      this.router.navigate([uri]);
+    });
   }
 
 }

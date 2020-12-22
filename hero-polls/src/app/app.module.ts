@@ -15,6 +15,7 @@ import { HeroDetailsPageComponent } from './hero-details-page';
 import { HttpClientModule } from '@angular/common/http';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
 import { HeroVotableComponent } from './hero-votable/hero-votable.component';
+import { RefreshComponent } from './refresh/refresh.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HeroVotableComponent } from './hero-votable/hero-votable.component';
     HomeComponent,
     HeroDetailsPageComponent,
     HeroDetailsComponent,
-    HeroVotableComponent
+    HeroVotableComponent,
+    RefreshComponent
   ],
   imports: [
     BrowserModule,
