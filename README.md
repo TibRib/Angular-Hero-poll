@@ -52,6 +52,7 @@ Il n'y a plus qu'à se connecter sur [lien site angular]http://localhost:4200/
 ### Page Versus :
 Deux héros sont affichés aléatoirement. A vous de voter pour celui qui gagnerait un combat un contre un !
 ![Versus page](pictures/versus.PNG)
+![Result Versus page](pictures/results.PNG)
 
 ### Page Héros : 
 Visualisez ici tous les héros proposés par les API utilisées (couramment : Marvel)
