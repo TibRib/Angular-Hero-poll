@@ -1,6 +1,10 @@
 # Angular Hero polls
 Ce projet d'Angular consiste à afficher les nombreux héros de chez Marvel, en connaître les relations, et surtout les faire s'affronter dans des sondages web !
 
+### Mockup Intéractif avant production:
+Visualisez [ici mon mockup intéractif](https://xd.adobe.com/view/91792b1b-04df-4777-7424-491856343f5d-e748/) 
+
+
 ## Features :
 - Navigation parmis tous les héros disponibles
 - Mode versus : combats-sondages 100% aléatoires !
@@ -14,7 +18,7 @@ Ce projet d'Angular consiste à afficher les nombreux héros de chez Marvel, en 
 Pour procéder à l'installation,
 
 ```bash
-pip install foobar
+
 ```
 
 
