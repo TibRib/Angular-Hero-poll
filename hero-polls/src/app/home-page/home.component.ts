@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -72,9 +73,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    console.log('ye')
+    
+    //Let's try  to access the local server
+    this.http.get('/localapi/battles').subscribe(response =>{
+      console.log(response)
+    });
   }
 
 }

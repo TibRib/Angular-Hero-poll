@@ -1,0 +1,20 @@
+{
+  "battles":[
+      {
+          "id" : 1,
+          "name" : "batman vs. superman",
+          "heros": [
+              {
+                  "name" : "batman",
+                  "uri" : "dccomics.com",
+                  "votes" : 60
+              },
+              {
+                "name" : "superman",
+                "uri" : "dccomics.com",
+                "votes" : 110
+            }
+          ]
+      }
+  ]
+}

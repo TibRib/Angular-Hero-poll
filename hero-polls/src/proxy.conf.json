@@ -6,5 +6,9 @@
       "^/marvel": ""
     },
     "changeOrigin": true
+  },
+
+  "/localapi": {
+    "target": "http://localhost:3000"
   }
 }
