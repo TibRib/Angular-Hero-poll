@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
+/* Ce composant est utilisé à des fins de placeholder
+ * A l'image de gros sites internet asynchrones comme Youtube et Facebook,
+ * J'ai décidé que disposer de cartes au contenu grisé simple
+ * Etait plaisant du point de vue utilisateur, et fait passer l'attente de contenu
+ * */
+
 @Component({
   selector: 'hp-ghost-card',
   template: `
@@ -11,7 +17,6 @@ import { Component, OnInit } from '@angular/core';
     <div id="title_placeholder"></div>
   </mdb-card-title>
 
-  <!--><a mdbBtn color="dark" mdbWavesEffect>Details</a> <!-->
   <div id="button_placeholder"></div>
 </mdb-card-body>
   `,
@@ -46,7 +51,7 @@ import { Component, OnInit } from '@angular/core';
   ]
 })
 export class GhostCardComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
