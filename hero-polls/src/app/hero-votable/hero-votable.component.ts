@@ -17,7 +17,7 @@ import { Perso } from '../perso';
               <p  [ngClass]="{'text-right': right }">{{perso.origin}}</p>
             </div>
             <div class="p-2 btn-block">
-            <button class="btn" (click)="selectionPersonnage()" [ngClass]="{'btn-danger': left, 'btn-primary': right, 'float-right': right }" >Vote</button>
+            <button mdbBtn (click)="selectionPersonnage()" [ngClass]="{'btn-danger': left, 'btn-primary': right, 'float-right': right }" >Vote</button>
             </div>
           </div>
         </div>
@@ -31,6 +31,9 @@ import { Perso } from '../perso';
       <p class="mt-3" [ngClass]="{'text-right': right }">
       {{perso.description}}
       </p>
+      <div class="p-2 btn-block">
+        <a *ngIf="perso.id > 0" [ngClass]="{'float-right': right }" routerLink="/details/{{perso.origin}}/{{perso.id}}" class="btn btn-link" data-mdb-ripple-color="dark">see more</a>
+      </div>
     </section>
   `,
   styles: [

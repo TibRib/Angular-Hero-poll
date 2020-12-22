@@ -47,6 +47,7 @@ export class HeroDetailsPageComponent implements OnInit {
         default:
           console.log("Error :: No origin specified !")
       }
+      
       window.scrollTo(0, 0);
     });
     
