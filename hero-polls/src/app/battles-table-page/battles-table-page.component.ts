@@ -27,8 +27,8 @@ import { BattlesService } from '../battles.service';
   ]
 })
 export class BattlesTablePageComponent implements OnInit {
-  headers = ["#", "Battle name","Votes", "Action" ]
-  battles :  Array<Battle>
+  headers = ["#", "Battle name","Votes", "Action" ] //Les entêtes du tableau du template
+  battles :  Array<Battle>  //Ma future liste de combats-sondages enregistrés
 
   constructor(private battleService : BattlesService) { }
 
@@ -36,6 +36,7 @@ export class BattlesTablePageComponent implements OnInit {
     this.fetchBattles();
   }
 
+  /* Méthode de récupération des combats-sondages dans le serveur json */
   fetchBattles() : void{
     this.battleService.getBattles().subscribe(
       result => this.battles = result);
