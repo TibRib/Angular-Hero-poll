@@ -29,6 +29,7 @@ npm start
 ```
 Le lancement des serveurs json et Angular prend environ 30 secondes. Merci d'être patient.
 ![gif](pictures/npm_start.gif)
+
 Vous saurez que tout est bon lorsque la console affiche ceci:
 ```bash
 ...
@@ -43,7 +44,7 @@ Vous saurez que tout est bon lorsque la console affiche ceci:
 [0] : Compiled successfully.
 ```
 
-Il n'y a plus qu'à se connecter sur [lien site angular]http://localhost:4200/
+Il n'y a plus qu'à se connecter sur http://localhost:4200/
 
 ## Pages
 ### Page d'accueil :
@@ -69,5 +70,5 @@ Affiche les combats-sondages déjà enregistrés sur le json-server, et donne la
 ### Précisions
 Projet réalisé dans le cadre d'un devoir d'Angular,
 appels effectués de façon asynchrone.
-- Utilisation de l'API [lien vers api marvel](https://developer.marvel.com/ "Marvel") Tous droits réservés.
+- Utilisation de l'API [Marvel](https://developer.marvel.com/) Tous droits réservés.
 - Utilisation aussi d'une API REST sur serveur local par le biais de json-server pour le stockage des sondages. (disponible sur le port 3000)
