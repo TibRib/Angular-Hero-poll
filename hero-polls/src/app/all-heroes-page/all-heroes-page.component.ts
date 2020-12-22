@@ -13,6 +13,11 @@ import { PersoService } from '../perso.service';
     <h1 class="text-center">
       All heroes
     </h1>
+    <div class="mx-auto text-center">
+      <button type="button" (click)="setPage(page-1)" *ngIf="(page-1)>0" class="btn btn-primary"><{{page-1}}</button>
+      <button type="button" class="btn btn-info" disabled>{{page}}</button>
+      <button type="button" (click)="setPage(page+1)" class="btn btn-primary">{{page+1}}></button>
+    </div>
   <hr>
     
     <hp-hero-list [heros]="heros"></hp-hero-list>
@@ -35,6 +40,9 @@ export class AllHeroesPageComponent implements OnInit {
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
        this.page = +this.route.snapshot.paramMap.get('page');
+       if(this.page < 1){
+        this.setPage(1);
+       }
     });
     this.fetchHeroes();
   }
