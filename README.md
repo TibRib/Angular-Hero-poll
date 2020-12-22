@@ -18,7 +18,8 @@ Visualisez [ici mon mockup intéractif](https://xd.adobe.com/view/91792b1b-04df-
 Pour procéder à l'installation,
 
 ```bash
-
+cd hero-polls
+npm install
 ```
 
 
@@ -49,6 +50,8 @@ Vous saurez que tout est bon lorsque la console affiche ceci:
 ```
 
 Il n'y a plus qu'à se connecter sur http://localhost:4200/
+
+(Pour terminer les processus, appuyer deux fois sur Ctrl-C )
 
 ## Pages
 ### Page d'accueil :

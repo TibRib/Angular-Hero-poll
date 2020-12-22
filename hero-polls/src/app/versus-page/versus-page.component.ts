@@ -141,10 +141,8 @@ export class VersusPageComponent implements OnInit {
 
           //2 : Met à jour les valeurs associées aux résultats
           //check perso: -- Placeholder
-          if(perso.id === this.heroLeft.id){
-            this.prctLeft = voteLeft*100;
-            this.prctRight = voteRight*100;
-          }
+          this.prctLeft = voteLeft*100;
+          this.prctRight = voteRight*100;
         }
         //Battle existante !
         else{
@@ -156,8 +154,6 @@ export class VersusPageComponent implements OnInit {
           else if(newBattle.participants[1].id === perso.id)
             newBattle.participants[1].votes += 1;
 
-          //Envoi de la nouvelle donnée en base
-          this.battles.updateBattle(newBattle)
           //2 : Met à jour les valeurs associées aux résultats
           const votesL = newBattle.participants[0].votes;
           const votesR = newBattle.participants[1].votes;
@@ -165,6 +161,9 @@ export class VersusPageComponent implements OnInit {
           this.nbVoters = somme;
           this.prctLeft = Math.floor((votesL/somme) * 100) ;
           this.prctRight = Math.floor((votesR/somme) * 100);
+          
+          //Envoi de la nouvelle donnée en base
+          this.battles.updateBattle(newBattle)
         }
 
         //3 : Autorise l'affichage des résultats, confirme le vote:

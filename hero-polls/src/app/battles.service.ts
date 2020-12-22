@@ -86,13 +86,14 @@ export class BattlesService {
       //Then I iterate between these to check if its opponent is the one targetted
       for (let i = 0; i < all.length; i++) {
         if( this.hasHero(all[i], perso2.id) )
-          battle.next(all[i]); //If it's the case, I set it as the next value.
           foundSomething = true;
+          battle.next(all[i]); //If it's the case, I set it as the next value.
           break;              // And exit the check loop.
       }
-      if( !foundSomething ){
+      if( foundSomething === false){
         battle.next(null);
       }
+      console.log("here")
     });
     return battle.asObservable();
   }
