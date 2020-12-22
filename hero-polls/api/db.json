@@ -1,22 +1,279 @@
 {
-  "battles":[
-      {
-          "id" : 1,
-          "name" : "batman vs. superman",
-          "heros": [
-              {
-                  "id" : 1234,
-                  "name" : "Tenebrous",
-                  "uri" : "dccomics.com",
-                  "votes" : 60
-              },
-              {
-                "id" : 5678,
-                "name" : "Miracleman",
-                "uri" : "dccomics.com",
-                "votes" : 110
-            }
-          ]
-      }
+  "battles": [
+    {
+      "id": 1,
+      "name": "batman vs. superman",
+      "participants": [
+        {
+          "id": 1234,
+          "name": "Tenebrous",
+          "uri": "dccomics.com",
+          "votes": 60
+        },
+        {
+          "id": 5678,
+          "name": "Miracleman",
+          "uri": "dccomics.com",
+          "votes": 110
+        }
+      ]
+    },
+    {
+      "id": 5638106,
+      "participants": [],
+      "name": "Bob, Agent of Hydra vs. Spider-Girl (Anya Corazon)"
+    },
+    {
+      "id": 7438451,
+      "participants": [
+        {
+          "id": 1009508,
+          "name": "Kitty Pryde",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009508",
+          "votes": 1
+        },
+        {
+          "id": 1011119,
+          "name": "Bob, Agent of Hydra",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1011119",
+          "votes": 0
+        }
+      ],
+      "name": "Kitty Pryde vs. Bob, Agent of Hydra"
+    },
+    {
+      "id": 9164413,
+      "participants": [
+        {
+          "id": 1009740,
+          "name": "Arnim Zola",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009740",
+          "votes": 0
+        },
+        {
+          "id": 1009502,
+          "name": "Pretty Boy",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009502",
+          "votes": 1
+        }
+      ],
+      "name": "Arnim Zola vs. Pretty Boy"
+    },
+    {
+      "id": 5679486,
+      "participants": [
+        {
+          "id": 1011162,
+          "name": "Tenebrous",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1011162",
+          "votes": 1
+        },
+        {
+          "id": 1009368,
+          "name": "Iron Man",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009368",
+          "votes": 0
+        }
+      ],
+      "name": "Tenebrous vs. Iron Man"
+    },
+    {
+      "id": 3896550,
+      "participants": [
+        {
+          "id": 1013727,
+          "name": "Miracleman",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1013727",
+          "votes": 1
+        },
+        {
+          "id": 1010991,
+          "name": "War Machine (Parnell Jacobs)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1010991",
+          "votes": 0
+        }
+      ],
+      "name": "Miracleman vs. War Machine (Parnell Jacobs)"
+    },
+    {
+      "id": 4769713,
+      "participants": [
+        {
+          "id": 1009519,
+          "name": "Puppet Master",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009519",
+          "votes": 2
+        },
+        {
+          "id": 1009735,
+          "name": "Mariko Yashida",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009735",
+          "votes": 0
+        }
+      ],
+      "name": "Puppet Master vs. Mariko Yashida"
+    },
+    {
+      "id": 9927865,
+      "participants": [
+        {
+          "id": 1009687,
+          "name": "Unus",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009687",
+          "votes": 6
+        },
+        {
+          "id": 1011309,
+          "name": "Toro (Thomas Raymond)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1011309",
+          "votes": 9
+        }
+      ],
+      "name": "Unus vs. Toro (Thomas Raymond)"
+    },
+    {
+      "id": 3034250,
+      "participants": [
+        {
+          "id": 1009225,
+          "name": "Captain Stacy",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009225",
+          "votes": 11
+        },
+        {
+          "id": 1010790,
+          "name": "Scorpion (Carmilla Black)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1010790",
+          "votes": 9
+        }
+      ],
+      "name": "Captain Stacy vs. Scorpion (Carmilla Black)"
+    },
+    {
+      "id": 8070787,
+      "participants": [
+        {
+          "id": 1009280,
+          "name": "Dormammu",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009280",
+          "votes": 2
+        },
+        {
+          "id": 1010890,
+          "name": "Deathlok",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1010890",
+          "votes": 0
+        }
+      ],
+      "name": "Dormammu vs. Deathlok"
+    },
+    {
+      "id": 7708490,
+      "participants": [
+        {
+          "id": 1010975,
+          "name": "Shadowcat (Age of Apocalypse)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1010975",
+          "votes": 4
+        },
+        {
+          "id": 1009708,
+          "name": "Mary Jane Watson",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009708",
+          "votes": 1
+        }
+      ],
+      "name": "Shadowcat (Age of Apocalypse) vs. Mary Jane Watson"
+    },
+    {
+      "id": 3968490,
+      "participants": [
+        {
+          "id": 1009351,
+          "name": "Hulk",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009351",
+          "votes": 1
+        },
+        {
+          "id": 1009146,
+          "name": "Abomination (Emil Blonsky)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009146",
+          "votes": 0
+        }
+      ],
+      "name": "Hulk vs. Abomination (Emil Blonsky)"
+    },
+    {
+      "id": 7667832,
+      "participants": [
+        {
+          "id": 1010757,
+          "name": "Omega Flight",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1010757",
+          "votes": 1
+        },
+        {
+          "id": 1017577,
+          "name": "Ms. Marvel (Kamala Khan)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1017577",
+          "votes": 0
+        }
+      ],
+      "name": "Omega Flight vs. Ms. Marvel (Kamala Khan)"
+    },
+    {
+      "id": 2255983,
+      "participants": [
+        {
+          "id": 1010348,
+          "name": "Whirlwind",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1010348",
+          "votes": 1
+        },
+        {
+          "id": -1,
+          "name": "Loading",
+          "uri": "",
+          "votes": 0
+        }
+      ],
+      "name": "Whirlwind vs. Loading"
+    },
+    {
+      "id": 4530411,
+      "participants": [
+        {
+          "id": 1009579,
+          "name": "Shard",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009579",
+          "votes": 1
+        },
+        {
+          "id": 1009740,
+          "name": "Arnim Zola",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009740",
+          "votes": 0
+        }
+      ],
+      "name": "Shard vs. Arnim Zola"
+    },
+    {
+      "id": 8715713,
+      "participants": [
+        {
+          "id": 1010788,
+          "name": "Venom (Mac Gargan)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1010788",
+          "votes": 4
+        },
+        {
+          "id": 1009596,
+          "name": "Banshee (Theresa Rourke)",
+          "uri": "http://gateway.marvel.com/v1/public/characters/1009596",
+          "votes": 1
+        }
+      ],
+      "name": "Venom (Mac Gargan) vs. Banshee (Theresa Rourke)"
+    }
   ]
 }

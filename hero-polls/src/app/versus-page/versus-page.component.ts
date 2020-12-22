@@ -4,6 +4,8 @@ import { Perso } from '../perso';
 import { PersoService } from '../perso.service';
 import { Location } from '@angular/common';
 import { BattlesService } from '../battles.service';
+import { Participant } from '../participant';
+import { Battle } from '../battle';
 @Component({
   selector: 'hp-versus-page',
   template: `
@@ -24,8 +26,8 @@ import { BattlesService } from '../battles.service';
           </div>
           <p>{{nbVoters}} votes</p>
           <div class="container mt-auto">
-            <button (click)="refresh()" class="btn btn-block btn-warning mb-2">Another versus</button>
-            <a routerLink="/heroes" class="btn btn-block btn-secondary">All heroes</a>
+            <button (click)="refresh()" mdbBtn class="btn-warning mb-2 btn-block">Another versus</button>
+            <a routerLink="/heroes" mdbBtn class="btn-light btn-block" data-mdb-ripple-color="dark">All heroes</a>
           </div>
         </div>
         <span [ngClass]="{'d-none': madeChoice}" id="vs_label">VS.</span>
@@ -88,9 +90,11 @@ export class VersusPageComponent implements OnInit {
   */
   choixPersonnage(perso : Perso): void{
     //On vérifie que le vote n'a pas déjà été fait sur la page:
+    /*
     if (this.madeChoice == true){
       return;
     }
+    */
     //On récupère, si existant le combat en question
     this.battles.getBattleBetween(this.heroLeft,this.heroRight).subscribe(
       battle => {
@@ -99,27 +103,56 @@ export class VersusPageComponent implements OnInit {
 
         //1 : Enregistre le vote en base / incrémente si existant
         if(battle === null){ //Combat non éxistant entre ces deux personnages
-          //On enregistre un nouveau combat en base
-
           //On incrémente la valeur de perso
+          this.nbVoters = 1;
+          let voteLeft : number = 0;
+          let voteRight : number = 0;
+          if(perso.id === this.heroLeft.id){
+            voteLeft = 1;
+          }else{
+            voteRight = 1;
+          }
+          let participants : Array<Participant> = [ 
+            this.battles.newParticipant(this.heroLeft, voteLeft),
+            this.battles.newParticipant(this.heroRight, voteRight),
+          ]
+          //On enregistre un nouveau combat en base
+          console.log("Battle non existante, enregistrement en base !")
+          let newBattle: Battle = 
+            {
+              'id': Math.floor(Math.random() * Math.floor(9999999)),
+              'participants' : participants,
+              'name' : this.heroLeft.name+" vs. "+this.heroRight.name,
+            };
+          this.battles.addBattle( newBattle );
+          console.log("Battle "+newBattle.id+" sauvée : "+newBattle.name);
 
           //2 : Met à jour les valeurs associées aux résultats
           //check perso: -- Placeholder
           if(perso.id === this.heroLeft.id){
-            this.prctLeft = 100;
-            this.prctRight = 0;
-          }
-          else{
-            this.prctRight = 100;
-            this.prctLeft = 0;
+            this.prctLeft = voteLeft*100;
+            this.prctRight = voteRight*100;
           }
         }
+        //Battle existante !
         else{
-          //Incrément de la valeur en base
+          let newBattle = battle;
+          console.log("Battle "+newBattle.id+" existante en base : "+newBattle.name);
+          //Incrément de la valeur du vote
+          if(newBattle.participants[0].id === perso.id)
+            newBattle.participants[0].votes += 1;
+          else if(newBattle.participants[1].id === perso.id)
+            newBattle.participants[1].votes += 1;
 
+          //Envoi de la nouvelle donnée en base
+          this.battles.updateBattle(newBattle)
           //2 : Met à jour les valeurs associées aux résultats
-          this.prctLeft = 32;
-          this.prctRight = 100-this.prctLeft;
+          const votesL = newBattle.participants[0].votes;
+          const votesR = newBattle.participants[1].votes;
+          const somme = votesL + votesR;
+          this.nbVoters = somme;
+          this.prctLeft = Math.floor((votesL/somme) * 100) ;
+          this.prctRight = Math.floor((votesR/somme) * 100);
         }
 
         //3 : Autorise l'affichage des résultats, confirme le vote:

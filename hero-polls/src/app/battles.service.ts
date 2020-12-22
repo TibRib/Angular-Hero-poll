@@ -3,6 +3,7 @@ import { HttpClient, HttpErrorResponse, HttpHeaderResponse, HttpHeaders, HttpPar
 import { Perso } from './perso';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { Battle } from './battle';
+import { Participant } from './participant';
 
 const BATTLES_URL = "/localapi/battles";
 
@@ -52,8 +53,8 @@ export class BattlesService {
 
   //Returns true if one of the provided battle's participants corresponds to the name
   hasHero(battle: Battle, id : number){
-    for (let i = 0; i < battle.heros.length; i++) {
-      if( battle.heros[i].id === id ){
+    for (let i = 0; i < battle.participants.length; i++) {
+      if( battle.participants[i].id === id ){
         return true;
       }
     }
@@ -63,7 +64,6 @@ export class BattlesService {
 
   //Returns a list of all the battles the provided hero was involved in.
   getBattlesOfHero(perso:Perso) : Observable<Array<Battle>> {
-    let heroName = perso.name;
     let battles :Subject<Array<Battle>> = new Subject<Array<Battle>>();
     
     this.getBattles().subscribe(all =>{
@@ -95,6 +95,27 @@ export class BattlesService {
       }
     });
     return battle.asObservable();
+  }
+
+  addBattle(battle : Battle) {
+    this.http.post(BATTLES_URL, battle).subscribe(data => {
+      console.log(data);
+    });
+  }
+
+  updateBattle(battle : Battle){
+    this.http.put(BATTLES_URL+"/"+battle.id, battle).subscribe(data => {
+      console.log(data);
+    });
+  }
+
+  newParticipant(perso: Perso, votes:number=0) : Participant{
+    return {
+      'id' : perso.id,
+      'name' : perso.name,
+      'uri' : perso.URI,
+      'votes' : votes
+    }
   }
 
 }
