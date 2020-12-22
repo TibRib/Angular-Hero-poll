@@ -1,5 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { Perso } from '../perso';
 import { PersoService } from '../perso.service';
 import { Location } from '@angular/common';
@@ -67,13 +67,25 @@ export class VersusPageComponent implements OnInit {
   constructor(private persoService: PersoService,
               private battles : BattlesService,
               private router: Router,
+              private route: ActivatedRoute,
               private location: Location)
               { }
 
-  ngOnInit(): void {
-    this.heroLeft = this.persoService.createPerso();
-    this.heroRight = this.persoService.createPerso();
+  ngOnInit(): void { //On donne la possibilité de charger une battle déjà enregistrée par id
+    this.route.paramMap.subscribe((params: ParamMap) => {
+      const id_parameter = this.route.snapshot.paramMap.get('battleid');
+      if(id_parameter == null){
+        //Classic way : init the polling with two randoms
+        this.initAndRandomizePoll();
+      }
+      else{
+        const id : number = +id_parameter;
+        this.loadBattle(id);
+      }
+    });
+  }
 
+  initAndRandomizePoll() : void {
     this.persoService.getRandomPersoMARVEL().subscribe( r => {
       this.heroLeft = r;
     });
@@ -164,8 +176,23 @@ export class VersusPageComponent implements OnInit {
     //Pas très joli, mais workaround pour rafraichir la page
     this.router.navigateByUrl("/refresh",{skipLocationChange:true}).then(() => {
       let uri = decodeURI(this.location.path());
-      this.router.navigate([uri]);
+      this.router.navigate(['/versus']);
     });
+  }
+
+  //On charge une battle déja enregistrée : 
+  loadBattle(battleid: number){
+    console.log("Loading battle n°"+battleid);
+    this.battles.getBattleById(battleid).subscribe( battle => {
+      this.persoService.getPersoMARVEL(battle.participants[0].id, false).subscribe( r => {
+        this.heroLeft = r;
+      });
+      this.persoService.getPersoMARVEL(battle.participants[1].id, false).subscribe( r => {
+        this.heroRight = r;
+      });
+
+    });
+    
   }
 
 }

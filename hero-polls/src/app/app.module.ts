@@ -11,6 +11,7 @@ import { VersusPageComponent } from './versus-page';
 import { AllHeroesPageComponent } from './all-heroes-page';
 import { HomeComponent } from './home-page';
 import { HeroDetailsPageComponent } from './hero-details-page';
+import { BattlesTablePageComponent } from './battles-table-page';
 
 import { HttpClientModule } from '@angular/common/http';
 import { HeroDetailsComponent } from './hero-details/hero-details.component';
@@ -31,7 +32,8 @@ import { GhostCardComponent } from './ghost-card/ghost-card.component';
     HeroDetailsComponent,
     HeroVotableComponent,
     RefreshComponent,
-    GhostCardComponent
+    GhostCardComponent,
+    BattlesTablePageComponent
   ],
   imports: [
     BrowserModule,

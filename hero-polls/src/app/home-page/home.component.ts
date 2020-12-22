@@ -12,8 +12,9 @@ import { Component, OnInit } from '@angular/core';
         <h1 id="title_main">Hero polls</h1>
 
         <div class="col-9 mx-auto">
-          <a routerLink="/versus" class="ml-2 btn btn-block btn-lg btn-primary rounded-pill mb-3">Versus</a>
-          <a routerLink="/heroes" class="ml-5 btn btn-block btn-danger rounded-pill">All Heroes</a>
+          <a routerLink="/versus" class="ml-0 btn btn-block btn-lg btn-primary rounded-pill mb-3">Versus</a>
+          <a routerLink="/heroes" class="ml-3 btn btn-block btn-lg  btn-danger rounded-pill">All Heroes</a>
+          <a routerLink="/battles" class="ml-5 mt-3 btn btn-block btn-dark rounded-pill">Battles archives</a>
         </div>
       </div>
     </div>

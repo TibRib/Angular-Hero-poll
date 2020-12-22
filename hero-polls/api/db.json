@@ -1,29 +1,6 @@
 {
   "battles": [
     {
-      "id": 1,
-      "name": "batman vs. superman",
-      "participants": [
-        {
-          "id": 1234,
-          "name": "Tenebrous",
-          "uri": "dccomics.com",
-          "votes": 60
-        },
-        {
-          "id": 5678,
-          "name": "Miracleman",
-          "uri": "dccomics.com",
-          "votes": 110
-        }
-      ]
-    },
-    {
-      "id": 5638106,
-      "participants": [],
-      "name": "Bob, Agent of Hydra vs. Spider-Girl (Anya Corazon)"
-    },
-    {
       "id": 7438451,
       "participants": [
         {
@@ -36,7 +13,7 @@
           "id": 1011119,
           "name": "Bob, Agent of Hydra",
           "uri": "http://gateway.marvel.com/v1/public/characters/1011119",
-          "votes": 0
+          "votes": 1
         }
       ],
       "name": "Kitty Pryde vs. Bob, Agent of Hydra"
@@ -72,7 +49,7 @@
           "id": 1009368,
           "name": "Iron Man",
           "uri": "http://gateway.marvel.com/v1/public/characters/1009368",
-          "votes": 0
+          "votes": 1
         }
       ],
       "name": "Tenebrous vs. Iron Man"
@@ -84,13 +61,13 @@
           "id": 1013727,
           "name": "Miracleman",
           "uri": "http://gateway.marvel.com/v1/public/characters/1013727",
-          "votes": 1
+          "votes": 2
         },
         {
           "id": 1010991,
           "name": "War Machine (Parnell Jacobs)",
           "uri": "http://gateway.marvel.com/v1/public/characters/1010991",
-          "votes": 0
+          "votes": 5
         }
       ],
       "name": "Miracleman vs. War Machine (Parnell Jacobs)"

@@ -170,7 +170,9 @@ export class PersoService {
     }
 
     const params = this.marvelParameters();
-    let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPerso());
+    let perso : BehaviorSubject<Perso> = new BehaviorSubject<Perso>(this.createPersoWith(-1,"Loading","Loading the hero",[],[],"Fetching...",
+      "https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e47kczqo3alpmzyq5mmfw9mrkqivuzo35i2ruhwmf6v&rid=giphy.gif","")
+      );
 
     this.http.get(urlGet, { params }).subscribe(response =>{
       let data = response["data"];
