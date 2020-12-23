@@ -1,6 +1,15 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Perso } from '../perso';
 
+/* Similaire à un hero-details component,
+ * Ce component affiche les informations essentielles
+ * associées à un personnage, spécifiquement dédiées
+ * A son affichage sur la page de Versus.
+ * 
+ * A noter que selon le booleen Left ou Right,
+ * des classes CSS sont appliquées pour aligner les contenus
+ * sur la gauche ou la droite dans la page */
+
 @Component({
   selector: 'hp-hero-votable',
   template: `
@@ -44,16 +53,21 @@ export class HeroVotableComponent implements OnInit {
   @Input() left : boolean;
   right : boolean=false;
 
+  //Event de sortie pour notification d'un appui sur le bouton 'Voter' à la page parent.
   @Output() choisiEvent = new EventEmitter<Perso>();
 
   constructor() { 
   }
 
   ngOnInit(): void {
+    //Pour la simplicité du code, on donnera au booléen right,
+    // La valeur inverse du booléen left, lors de l'initialisation
     this.right = !this.left;
   }
 
   selectionPersonnage(): void{
+    //Emission d'un signal pour que le parent soit notifié
+    //D'un appui sur le bouton Voter associé au composant
     this.choisiEvent.next(this.perso);
   }
 

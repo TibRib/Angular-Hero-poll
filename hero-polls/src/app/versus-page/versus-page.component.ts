@@ -6,6 +6,15 @@ import { Location } from '@angular/common';
 import { BattlesService } from '../battles.service';
 import { Participant } from '../participant';
 import { Battle } from '../battle';
+
+/* Ce composant a pour objectif
+ * De donner la possibilité de récuperer deux adversaires aléatoires,
+ * De les afficher à l'aide de hero-votable components,
+ * De Permettre de voter pour un de ces personnages
+ * D'Afficher le résultat associé aux votes enregistrés
+ * Et de demander à sauvegarder toute intéraction en rapport avec ces votes */
+
+
 @Component({
   selector: 'hp-versus-page',
   template: `
@@ -103,8 +112,8 @@ export class VersusPageComponent implements OnInit {
   choixPersonnage(perso : Perso): void{
     //On vérifie que le vote n'a pas déjà été fait sur la page:
     /*
-    if (this.madeChoice == true){
-      return;
+    if (this.madeChoice == true){     // ATTENTION : VERIFICATION DESACTIVEE VOLONTAIREMENT
+      return;                         // RENDANT POSSIBLE LE FAIT DE VOTER PLUSIEURS FOIS, POUR DES FINS DE TEST
     }
     */
     //On récupère, si existant le combat en question
@@ -182,7 +191,10 @@ export class VersusPageComponent implements OnInit {
   //On charge une battle déja enregistrée : 
   loadBattle(battleid: number){
     console.log("Loading battle n°"+battleid);
+    //On s'abonne à la recherche d'un combat-sondage par Id
     this.battles.getBattleById(battleid).subscribe( battle => {
+      //Une fois identifié, on récupère les informations complètes des participants
+      //Pour afficher leurs données sur la page Versus actuelle.
       this.persoService.getPersoMARVEL(battle.participants[0].id, false).subscribe( r => {
         this.heroLeft = r;
       });
