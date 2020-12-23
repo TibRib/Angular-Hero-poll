@@ -6,6 +6,11 @@ import {NgbConfig} from '@ng-bootstrap/ng-bootstrap';
 import { Perso } from '../perso';
 import { PersoService } from '../perso.service';
 
+/* Ce composant a pour objectif
+ * de fournir un système de navigation
+ * et des données associées à une liste de personnages,
+ * passées vers un hero-list component */
+
 @Component({
   selector: 'hp-all-heroes-page',
   template: `

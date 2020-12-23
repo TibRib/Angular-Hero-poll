@@ -2,6 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { Battle } from '../battle';
 import { BattlesService } from '../battles.service';
 
+/* Ce composant a pour objectif
+ * d'afficher sous forme de tableau
+ * les différents combats-sondages enregistrés
+ * d'offrir un visuel net sur ceux-ci
+ * et d'offrir un accès vers ceux-ci
+ */
+
 @Component({
   selector: 'hp-battles-table-page',
   template: `
