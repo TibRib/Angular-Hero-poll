@@ -63,11 +63,14 @@ export class BattlesService {
 
   //Returns true if one of the provided battle's participants corresponds to the name
   hasHero(battle: Battle, id : number){
-    for (let i = 0; i < battle.participants.length; i++) {
-      if( battle.participants[i].id === id ){
-        return true;
+    if(battle.participants){
+      for (let i = 0; i < battle.participants.length; i++) {
+        if( battle.participants[i].id === id ){
+          return true;
+        }
       }
     }
+    
     //Aucun correspondant - retour false
     return false;
   }
