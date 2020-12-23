@@ -4,6 +4,24 @@ import {Md5} from 'ts-md5/dist/md5';
 import { Perso } from './perso';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
+/* Ce service est associé
+ * A toutes les opérations liées à la récupération
+ * de données de héros, de toutes les API disponibles
+ * 
+ * Originellement conçu pour supporter différentes API
+ * liées à la pop culture : Marvel, DC Comics, etc,
+ * les objets traités en réponse sont formattés sous une structure Personnage généraliste
+ * 
+ * Ne soyez pas surpris donc si les données sont traitées pour renvoyer des listes
+ * de Personnages, au lieu de renvoyer des résultats directs.
+ * 
+ * API actuellement supportées : Marvel
+ * 
+ * Désolé pour le mélange anglais français,
+ * Ca dépend des jours !
+ */
+
+
 /* MARVEL API 
   CALLS PER DAY : 3000
   URL : http://gateway.marvel.com
@@ -15,7 +33,15 @@ const MARVEL_PUB_KEY= "d6e02dd7c891815142fcac32c5c10859";
 const MARVEL_PRIV_KEY = "7124daa3a6fc215551ec2e84c5127989333906ef";
 const MARVEL_MAX_DATA = 1493; //Id maximal des super héros marvel
 
-const MOCKUP_DATA = false;
+/* Très Utile ! Passer cette valeur à True indique
+  * que l'on va piocher sur des fichiers locaux
+  * et ainsi éviter de surcharger les appels vers l'API.
+  * Attention : donnés limitées, à n'utiliser qu'à des fins de test.
+  * 
+  * Les donnés associées sont trouvables dans le dossier assets/json_templates/
+  */
+const MOCKUP_DATA = false; //Set to true if lots of tests required (local data)
+
 
 @Injectable({
   providedIn: 'root'
@@ -24,6 +50,7 @@ export class PersoService {
   pageLength : number = 24
 
   constructor(private http: HttpClient) { 
+    //Affichage et rappel du mode Mockup de façon explicite et colorée :
     if(MOCKUP_DATA)   console.info("%cRunning PersoService in MOCKUP Json mode",
                                     "color: white; font-style: italic; background-color: blue;padding: 2px");
     else              console.info("%cRunning PersoService in Live mode",

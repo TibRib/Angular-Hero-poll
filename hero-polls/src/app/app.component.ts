@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
 
+/* Ce composant est le coeur du site Angular
+ * Il permet de charger du contenu déjà formatté
+ * Au sein d'une division container bootstrap.
+ * Permet aussi une barre de navigation, accessible partout
+ * */
 
 @Component({
   selector: 'hp-root',
   template: `
-    <!-- navigation -->
+    <!-- barre de navigation -->
     <nav id="navbar" class="navbar navbar-expand navbar-dark bg-dark">
         <div class="navbar-nav">
             <a class="nav-item nav-link" routerLink="/">Home</a>
@@ -14,7 +19,7 @@ import { Component } from '@angular/core';
         </div>
     </nav>
 
-    <!-- contenu -->
+    <!-- contenu dans un container -->
     <div class="jumbotron min-vh-100">
         <div class="container">
             <router-outlet></router-outlet>

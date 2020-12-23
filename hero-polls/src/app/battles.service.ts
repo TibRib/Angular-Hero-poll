@@ -5,6 +5,15 @@ import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { Battle } from './battle';
 import { Participant } from './participant';
 
+/* Battle services : 
+ * En française: combats-sondages
+ * Code commenté en anglais, if you don't mind
+ * 
+ * Prodigue toutes les fonctions associées 
+ * Aux GET et PUT des sondages dans l'API locale
+ * stockée sur le json-server.
+ */
+
 const BATTLES_URL = "/localapi/battles";
 
 @Injectable({
@@ -39,7 +48,8 @@ export class BattlesService {
   }
 
   //Self explainatory : Returns The battle that correspond to a name
-  // Ex: "batman vs. superman"
+  //                                      Ex: "batman vs. superman"
+  //Non utilisée (dépréciée) mais gardée si besoin..
   getBattleByTitle(title:String) : Observable<Battle>{
     let battle : Subject<Battle> = new Subject<Battle>();
     this.getBattles().subscribe( all =>{
@@ -98,18 +108,21 @@ export class BattlesService {
     return battle.asObservable();
   }
 
+  //Puts a new battle into the database
   addBattle(battle : Battle) {
     this.http.post(BATTLES_URL, battle).subscribe(data => {
       console.log(data);
     });
   }
 
+  //Change the battle with a specific id in the database
   updateBattle(battle : Battle){
     this.http.put(BATTLES_URL+"/"+battle.id, battle).subscribe(data => {
       console.log(data);
     });
   }
 
+  //Converts a Personnage into a simplified Participant object
   newParticipant(perso: Perso, votes:number=0) : Participant{
     return {
       'id' : perso.id,
